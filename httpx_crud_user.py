@@ -9,7 +9,9 @@ body_create = {
     "firstName": "Testuser",
     "middleName": "Testuser",
 }
-body_login = {"email": "my_usr1@example.com", "password": "12345"}
+email = body_create.get("email")
+print(email)
+body_login = {"email": email, "password": "12345"}
 body_update = {
     "email": get_random_email(),
     "lastName": "Alina_Kas",
