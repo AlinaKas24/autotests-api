@@ -11,3 +11,5 @@ Pygments==2.19.2
 pytest==9.0.2
 setuptools==82.0.1
 typing_extensions==4.15.0
+
+websockets~=16.0
