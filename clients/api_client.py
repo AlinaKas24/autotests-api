@@ -28,7 +28,7 @@ class ApiClient:
     def post(
         self,
         url: URL | str,
-        json: Any,
+        json: Any | None = None,
         data: RequestData | None = None,
         files: RequestFiles | None = None,
     ) -> Response:
