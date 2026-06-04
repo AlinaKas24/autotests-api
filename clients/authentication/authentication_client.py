@@ -1,28 +1,12 @@
-from typing import TypedDict
-
 from httpx import Response
 
 from clients.api_client import ApiClient
 from clients.public_http_builder import get_public_http_client
-
-
-class TokenDict(TypedDict):
-    tokenType: str
-    accessToken: str
-    refreshToken: str
-
-
-class LoginRequestDict(TypedDict):
-    email: str
-    password: str
-
-
-class RefreshRequestDict(TypedDict):
-    refreshToken: str
-
-
-class LoginResponseDict(TypedDict):
-    token: TokenDict
+from models.authentication_model import (
+    LoginRequestModel,
+    RefreshRequestModel,
+    LoginResponseModel,
+)
 
 
 class AuthenticationClient(ApiClient):
@@ -30,7 +14,7 @@ class AuthenticationClient(ApiClient):
     Клиент для работы с /api/v1/authentication
     """
 
-    def login_api(self, request: LoginRequestDict) -> Response:
+    def login_api(self, request: LoginRequestModel) -> Response:
         """
         Метод выполняет аутентификацию пользователя.
 
@@ -38,20 +22,24 @@ class AuthenticationClient(ApiClient):
         :return: Ответ от сервера в виде объекта httpx.Response
         """
 
-        return self.post("/api/v1/authentication/login", json=request)
+        return self.post(
+            "/api/v1/authentication/login", json=request.model_dump(by_alias=True)
+        )
 
-    def refresh_api(self, request: RefreshRequestDict) -> Response:
+    def refresh_api(self, request: RefreshRequestModel) -> Response:
         """
         Метод обновляет токен авторизации.
 
         :param request: Словарь с refreshToken.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.post("/api/v1/authentication/refresh", json=request)
+        return self.post(
+            "/api/v1/authentication/refresh", json=request.model_dump(by_alias=True)
+        )
 
-    def login(self, request: LoginRequestDict) -> LoginResponseDict:
+    def login(self, request: LoginRequestModel) -> LoginResponseModel:
         response = self.login_api(request)
-        return response.json()
+        return LoginResponseModel.model_validate(response.json())
 
 
 def get_authentication_client() -> AuthenticationClient:

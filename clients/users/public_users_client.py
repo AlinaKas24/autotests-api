@@ -4,40 +4,10 @@ from httpx import Response
 
 from clients.api_client import ApiClient
 from clients.public_http_builder import get_public_http_client
-
-
-# Добавили описание структуры пользователя
-class User(TypedDict):
-    """
-    Описание структуры пользователя.
-    """
-
-    id: str
-    email: str
-    lastName: str
-    firstName: str
-    middleName: str
-
-
-class CreateUserRequestDict(TypedDict):
-    """
-    Описание структуры запроса на создание пользователя.
-    """
-
-    email: str
-    password: str
-    lastName: str
-    firstName: str
-    middleName: str
-
-
-# Добавили описание структуры ответа создания пользователя
-class CreateUserResponseDict(TypedDict):
-    """
-    Описание структуры ответа создания пользователя.
-    """
-
-    user: User
+from models.pydantic_create_user_model import (
+    CreateUserRequestSchema,
+    CreateUserResponseSchema,
+)
 
 
 class PublicUsersClient(ApiClient):
@@ -45,17 +15,20 @@ class PublicUsersClient(ApiClient):
     Клиент для работы с /api/v1/users
     """
 
-    def create_user_api(self, request: CreateUserRequestDict) -> Response:
+    def create_user_api(
+        self,
+        request: CreateUserRequestSchema,
+    ) -> Response:
         """
         Метод создает пользователя.
 
         :param request: Словарь с email, password, lastName, firstName, middleName.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.post("/api/v1/users", json=request)
+        return self.post("/api/v1/users", json=request.model_dump(by_alias=True))
 
     # Добавили новый метод
-    def create_user(self, request: CreateUserRequestDict) -> CreateUserResponseDict:
+    def create_user(self, request: CreateUserRequestSchema) -> CreateUserResponseSchema:
         response = self.create_user_api(request)
         return response.json()
 

@@ -1,19 +1,11 @@
-from typing import TypedDict
-
 from httpx import Response
 
 from clients.api_client import ApiClient
-from clients.private_http_builder import AuthenticationUserDict, get_private_http_client
-
-
-class CreateFilesRequestDict(TypedDict):
-    """
-    Описание структуры запроса на создание файла.
-    """
-
-    filename: str
-    directory: str
-    upload_file: str
+from clients.private_http_builder import (
+    get_private_http_client,
+    AuthenticationUserModel,
+)
+from models.files_model import CreateFileRequestModel, CreateFileResponseModel
 
 
 class FilesClient(ApiClient):
@@ -41,7 +33,7 @@ class FilesClient(ApiClient):
 
         return self.delete(f"/api/v1/files/{file_id}")
 
-    def create_file_api(self, request: CreateFilesRequestDict) -> Response:
+    def create_file_api(self, request: CreateFileRequestModel) -> Response:
         """
         Метод создания файла.
 
@@ -51,10 +43,14 @@ class FilesClient(ApiClient):
 
         return self.post(
             f"/api/v1/files",
-            data=request,
-            files={"upload_file": open(request["upload_file"], "rb")},
+            data=request.model_dump(by_alias=True),
+            files={"upload_file": open(request.upload_file, "rb")},
         )
 
+    def create_file(self, request: CreateFileRequestModel) -> CreateFileResponseModel:
+        response = self.create_file_api(request)
+        return CreateFileResponseModel.model_validate_json(response.text)
 
-def get_files_client(user: AuthenticationUserDict) -> FilesClient:
+
+def get_files_client(user: AuthenticationUserModel) -> FilesClient:
     return FilesClient(client=get_private_http_client(user))

@@ -1,31 +1,16 @@
-from typing import TypedDict
-
 from httpx import Response
 
 from clients.api_client import ApiClient
-from clients.private_http_builder import AuthenticationUserDict, get_private_http_client
-
-
-class GetCoursesRequestDict(TypedDict):
-    userId: str
-
-
-class CreateCoursesRequestDict(TypedDict):
-    title: str
-    maxScore: int
-    minScore: int
-    description: str
-    estimatedTime: str
-    previewFileId: str
-    createdByUserId: str
-
-
-class UpdateCoursesRequestDict(TypedDict):
-    title: str | None
-    maxScore: int | None
-    minScore: int | None
-    description: str | None
-    estimatedTime: str | None
+from clients.private_http_builder import (
+    AuthenticationUserModel,
+    get_private_http_client,
+)
+from models.courses_model import (
+    GetCoursesQueryModel,
+    CreateCourseRequestModel,
+    UpdateCourseRequestModel,
+    CreateCourseResponseModel,
+)
 
 
 class CoursesClient(ApiClient):
@@ -33,27 +18,16 @@ class CoursesClient(ApiClient):
     Клиент для работы с /api/v1/courses
     """
 
-    def get_courses_api(self, query: GetCoursesRequestDict) -> Response:
+    def get_courses_api(self, query: GetCoursesQueryModel) -> Response:
         """
         Метод получения списка курсов.
 
         :param query: Словарь с userId.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
+        return self.get("/api/v1/courses", params=query.model_dump(by_alias=True))
 
-        return self.get(f"/api/v1/courses", params=query)
-
-    def create_courses_api(self, request: CreateCoursesRequestDict) -> Response:
-        """
-        Метод создания курса.
-
-        :param request: Словарь с title, maxScore, minScore, description, estimatedTime,
-        previewFileId, createdByUserId.
-        :return: Ответ от сервера в виде объекта httpx.Response
-        """
-        return self.post(f"/api/v1/courses", json=request)
-
-    def get_courses_by_id_api(self, course_id: str) -> Response:
+    def get_course_api(self, course_id: str) -> Response:
         """
         Метод получения курса.
 
@@ -62,8 +36,18 @@ class CoursesClient(ApiClient):
         """
         return self.get(f"/api/v1/courses/{course_id}")
 
-    def update_courses_by_id_api(
-        self, course_id: str, request: UpdateCoursesRequestDict
+    def create_course_api(self, request: CreateCourseRequestModel) -> Response:
+        """
+        Метод создания курса.
+
+        :param request: Словарь с title, maxScore, minScore, description, estimatedTime,
+        previewFileId, createdByUserId.
+        :return: Ответ от сервера в виде объекта httpx.Response
+        """
+        return self.post("/api/v1/courses", json=request.model_dump(by_alias=True))
+
+    def update_course_api(
+        self, course_id: str, request: UpdateCourseRequestModel
     ) -> Response:
         """
         Метод обновления курса.
@@ -72,22 +56,30 @@ class CoursesClient(ApiClient):
         :param request: Словарь с title, maxScore, minScore, description, estimatedTime.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
+        return self.patch(
+            f"/api/v1/courses/{course_id}", json=request.model_dump(by_alias=True)
+        )
 
-        return self.patch(f"/api/v1/courses/{course_id}", json=request)
-
-    def delete_courses_by_id_api(
-        self,
-        course_id: str,
-    ) -> Response:
+    def delete_course_api(self, course_id: str) -> Response:
         """
         Метод удаления курса.
 
         :param course_id: Идентификатор курса.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-
         return self.delete(f"/api/v1/courses/{course_id}")
 
+    def create_course(
+        self, request: CreateCourseRequestModel
+    ) -> CreateCourseResponseModel:
+        response = self.create_course_api(request)
+        return CreateCourseResponseModel.model_validate_json(response.text)
 
-def get_course_client(user: AuthenticationUserDict) -> CoursesClient:
+
+def get_courses_client(user: AuthenticationUserModel) -> CoursesClient:
+    """
+    Функция создаёт экземпляр CoursesClient с уже настроенным HTTP-клиентом.
+
+    :return: Готовый к использованию CoursesClient.
+    """
     return CoursesClient(client=get_private_http_client(user))

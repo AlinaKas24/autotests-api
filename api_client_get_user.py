@@ -1,9 +1,9 @@
-from clients.private_http_builder import AuthenticationUserDict
+from clients.private_http_builder import AuthenticationUserModel
 from clients.users.private_users_client import get_private_users_client
 from clients.users.public_users_client import (
     get_public_users_client,
-    CreateUserRequestDict,
 )
+from models.pydantic_create_user_model import CreateUserRequestSchema
 
 from tools.fakers import get_random_email
 
@@ -11,7 +11,7 @@ from tools.fakers import get_random_email
 public_users_client = get_public_users_client()
 
 # Инициализируем запрос на создание пользователя
-create_user_request = CreateUserRequestDict(
+create_user_request = CreateUserRequestSchema(
     email=get_random_email(),
     password="string",
     lastName="string",
@@ -24,8 +24,8 @@ create_user_response_data = create_user_response.json()
 print("Create user data:", create_user_response_data)
 
 # Инициализируем пользовательские данные для аутентификации
-authentication_user = AuthenticationUserDict(
-    email=create_user_request["email"], password=create_user_request["password"]
+authentication_user = AuthenticationUserModel(
+    email=create_user_request.email, password=create_user_request.password
 )
 # Инициализируем клиент PrivateUsersClient
 private_users_client = get_private_users_client(authentication_user)

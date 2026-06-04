@@ -1,20 +1,20 @@
-from pydantic import BaseModel, EmailStr
+from pydantic import BaseModel, EmailStr, Field
 
 
 class CreateUserRequestSchema(BaseModel):
-    email: EmailStr
+    email: str
     password: str
-    lastName: str
-    firstName: str
-    middleName: str
+    last_name: str | None = Field(alias="lastName")
+    first_name: str | None = Field(alias="firstName")
+    middle_name: str | None = Field(alias="middleName")
 
 
 class UserSchema(BaseModel):
     id: str
-    email: EmailStr
-    last_name: str
-    first_name: str
-    middle_name: str
+    email: str
+    last_name: str | None = Field(alias="lastName")
+    first_name: str | None = Field(alias="firstName")
+    middle_name: str | None = Field(alias="middleName")
 
 
 class CreateUserResponseSchema(BaseModel):
