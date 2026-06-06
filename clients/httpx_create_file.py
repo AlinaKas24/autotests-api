@@ -1,13 +1,15 @@
 import httpx
 
-from tools.fakers import get_random_email
+
 from pathlib import Path
+
+from tools.fakers import fake
 
 file_path = Path(__file__).resolve().parent.parent / "testdata" / "files" / "image.png"
 
 files = {"upload_file": open(file_path, "rb")}
 body_create = {
-    "email": get_random_email(),
+    "email": fake.email(),
     "password": "12345",
     "lastName": "Alina_K",
     "firstName": "Testuser",

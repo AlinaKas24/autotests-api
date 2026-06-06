@@ -11,12 +11,12 @@ from models.exercise_model import CreateExerciseRequestModel
 from models.files_model import CreateFileRequestModel
 from models.pydantic_create_user_model import CreateUserRequestSchema
 
-from tools.fakers import get_random_email
+from tools.fakers import fake
 
 public_users_client = get_public_users_client()
 
 create_user_request = CreateUserRequestSchema(
-    email=get_random_email(),
+    email=fake.email(),
     password="string",
     lastName="string",
     firstName="string",

@@ -16,3 +16,4 @@ websockets~=16.0
 httpx~=0.28.1
 pydantic~=2.13.4
 jsonschema~=4.26.0
+Faker~=40.21.0

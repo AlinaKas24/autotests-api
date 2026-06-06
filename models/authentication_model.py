@@ -1,5 +1,7 @@
 from pydantic import BaseModel, Field
 
+from tools.fakers import fake
+
 
 class TokenModel(BaseModel):
     token_type: str = Field(alias="tokenType")
@@ -8,8 +10,8 @@ class TokenModel(BaseModel):
 
 
 class LoginRequestModel(BaseModel):
-    email: str
-    password: str
+    email: str = Field(default_factory=fake.email())
+    password: str = Field(default_factory=fake.password())
 
 
 class RefreshRequestModel(BaseModel):

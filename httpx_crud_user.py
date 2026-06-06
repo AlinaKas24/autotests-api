@@ -1,9 +1,9 @@
 import httpx
 
-from tools.fakers import get_random_email
+from tools.fakers import fake
 
 body_create = {
-    "email": get_random_email(),
+    "email": fake.email(),
     "password": "12345",
     "lastName": "Alina_K",
     "firstName": "Testuser",
@@ -14,7 +14,7 @@ email = body_create.get("email")
 
 body_login = {"email": email, "password": "12345"}
 body_update = {
-    "email": get_random_email(),
+    "email": fake.email(),
     "lastName": "Alina_Kas",
     "firstName": "Testuser",
     "middleName": "Testuser",
