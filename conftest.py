@@ -5,6 +5,11 @@ from clients.authentication.authentication_client import (
     AuthenticationClient,
     get_authentication_client,
 )
+from clients.private_http_builder import AuthenticationUserModel
+from clients.users.private_users_client import (
+    PrivateUsersClient,
+    get_private_users_client,
+)
 from clients.users.public_users_client import PublicUsersClient, get_public_users_client
 from models.pydantic_create_user_model import (
     CreateUserRequestSchema,
@@ -24,6 +29,10 @@ class UserFixture(BaseModel):
     def password(self) -> str:
         return self.request.password
 
+    @property
+    def authentication_user(self) -> AuthenticationUserModel:
+        return AuthenticationUserModel(email=self.email, password=self.password)
+
 
 @pytest.fixture
 def authentication_client() -> AuthenticationClient:
@@ -33,6 +42,11 @@ def authentication_client() -> AuthenticationClient:
 @pytest.fixture
 def public_user_client() -> PublicUsersClient:
     return get_public_users_client()
+
+
+@pytest.fixture
+def private_user_client(function_user: UserFixture) -> PrivateUsersClient:
+    return get_private_users_client(function_user.authentication_user)
 
 
 @pytest.fixture
