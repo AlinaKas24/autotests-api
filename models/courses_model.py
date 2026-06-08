@@ -2,6 +2,7 @@ from pydantic import BaseModel, Field, ConfigDict
 
 from models.files_model import FileModel
 from models.users_model import UserModel
+from tools.fakers import fake
 
 
 class CourseModel(BaseModel):
@@ -38,11 +39,13 @@ class CreateCourseRequestModel(BaseModel):
 
     model_config = ConfigDict(populate_by_name=True)
 
-    title: str
-    max_score: int = Field(alias="maxScore")
-    min_score: int = Field(alias="minScore")
-    description: str
-    estimated_time: str = Field(alias="estimatedTime")
+    title: str = Field(default_factory=fake.text)
+    max_score: int = Field(alias="maxScore", default_factory=fake.max_score)
+    min_score: int = Field(alias="minScore", default_factory=fake.min_score)
+    description: str = Field(default_factory=fake.description)
+    estimated_time: str = Field(
+        alias="estimatedTime", default_factory=fake.estimate_time
+    )
     preview_file_id: str = Field(alias="previewFileId")
     created_by_user_id: str = Field(alias="createdByUserId")
 

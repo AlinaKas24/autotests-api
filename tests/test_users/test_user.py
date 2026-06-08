@@ -22,14 +22,15 @@ from tools.fakers import fake
 )
 @pytest.mark.users
 @pytest.mark.regression
-def test_create_user(public_user_client: PublicUsersClient, email):
-    request = CreateUserRequestSchema(email=fake.email(domain=email))
-    # print(request)
-    response = public_user_client.create_user_api(request)
-    response_data = CreateUserResponseSchema.model_validate_json(response.text)
+class TestUsersMe:
+    def test_create_user(self, public_user_client: PublicUsersClient, email):
+        request = CreateUserRequestSchema(email=fake.email(domain=email))
+        # print(request)
+        response = public_user_client.create_user_api(request)
+        response_data = CreateUserResponseSchema.model_validate_json(response.text)
 
-    assert_status_code(response.status_code, HTTPStatus.OK)
-    # Используем функцию для проверки ответа создания юзера
-    assert_create_user_response(request, response_data)
+        assert_status_code(response.status_code, HTTPStatus.OK)
+        # Используем функцию для проверки ответа создания юзера
+        assert_create_user_response(request, response_data)
 
-    validate_json_schema(response.json(), response_data.model_json_schema())
+        validate_json_schema(response.json(), response_data.model_json_schema())
