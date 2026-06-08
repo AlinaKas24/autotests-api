@@ -1,6 +1,7 @@
 import pytest
 from clients.users.private_users_client import PrivateUsersClient
-from conftest import UserFixture
+from fixtures.users import UserFixture
+
 from models.users_model import GetUserResponseModel
 
 

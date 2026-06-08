@@ -1,7 +1,8 @@
 from http import HTTPStatus
 import pytest
 from clients.private_http_builder import AuthenticationUserModel
-from conftest import UserFixture
+from fixtures.users import UserFixture
+
 from models.authentication_model import LoginRequestModel, LoginResponseModel
 from tools.assertions.base import assert_status_code
 
