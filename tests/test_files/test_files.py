@@ -6,6 +6,7 @@ import pytest
 from clients.errors_model import (
     ValidationErrorResponseModel,
     NotFoundErrorResponseModel,
+    IncorrectFileIdErrorResponseModel,
 )
 from clients.files.files_client import FilesClient
 from fixtures.files import FileFixture
@@ -15,10 +16,12 @@ from models.files_model import (
     GetFileResponseModel,
 )
 from tools.assertions.base import assert_status_code
+from tools.assertions.errors import assert_incorrect_file_id_errors_response
 from tools.assertions.files import (
     assert_create_file_with_empy_file_name_response,
     assert_create_file_with_empy_directory_response,
     assert_delete_file_not_found_response,
+    assert_get_file_with_incorrect_file_id_response,
 )
 from tools.assertions.schema import validate_json_schema
 
@@ -74,4 +77,14 @@ class TestFiles:
         print(response_get.json())
         assert_status_code(response_get.status_code, HTTPStatus.NOT_FOUND)
         assert_delete_file_not_found_response(response_data)
+        validate_json_schema(response_get.json(), response_data.model_json_schema())
+
+    def test_incorrect_file_id_file(self, files_client: FilesClient):
+        response_get = files_client.get_file_api(file_id="file_id")
+        response_data = IncorrectFileIdErrorResponseModel.model_validate_json(
+            response_get.text
+        )
+        print(response_get.json())
+        assert_status_code(response_get.status_code, HTTPStatus.UNPROCESSABLE_ENTITY)
+        assert_get_file_with_incorrect_file_id_response(response_data)
         validate_json_schema(response_get.json(), response_data.model_json_schema())
