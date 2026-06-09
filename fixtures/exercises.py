@@ -10,6 +10,7 @@ from models.exercise_model import (
     CreateExerciseResponseModel,
 )
 
+
 class ExercisesFixture(BaseModel):
     request: CreateExerciseRequestModel
     response: CreateExerciseResponseModel
@@ -22,7 +23,7 @@ def exercises_client(function_user: UserFixture) -> ExercisesClient:
 
 @pytest.fixture
 def function_exercises(
-    exercises_client: ExercisesClient,function_courses:CoursesFixture
+    exercises_client: ExercisesClient, function_courses: CoursesFixture
 ) -> ExercisesFixture:
     request = CreateExerciseRequestModel(courseId=function_courses.response.course.id)
     response = exercises_client.create_exercise(request)

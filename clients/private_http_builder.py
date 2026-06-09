@@ -13,7 +13,6 @@ class AuthenticationUserModel(BaseModel):
     password: str
 
 
-@lru_cache(maxsize=True)
 def get_private_http_client(user: AuthenticationUserModel) -> Client:
     authentication_client = get_authentication_client()
     login_request = LoginRequestModel(email=user.email, password=user.password)
