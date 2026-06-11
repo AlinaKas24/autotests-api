@@ -1,3 +1,5 @@
+from pathlib import Path
+
 from httpx import Response
 
 from clients.api_client import ApiClient
@@ -34,6 +36,7 @@ class FilesClient(ApiClient):
         return self.delete(f"/api/v1/files/{file_id}")
 
     def create_file_api(self, request: CreateFileRequestModel) -> Response:
+        file_path = Path(request.upload_file).resolve()
         """
         Метод создания файла.
 
@@ -44,7 +47,7 @@ class FilesClient(ApiClient):
         return self.post(
             f"/api/v1/files",
             data=request.model_dump(by_alias=True),
-            files={"upload_file": open(request.upload_file, "rb")},
+            files={"upload_file": open(file_path, "rb")},
         )
 
     def create_file(self, request: CreateFileRequestModel) -> CreateFileResponseModel:

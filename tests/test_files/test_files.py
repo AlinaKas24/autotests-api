@@ -84,7 +84,6 @@ class TestFiles:
         response_data = IncorrectFileIdErrorResponseModel.model_validate_json(
             response_get.text
         )
-        print(response_get.json())
         assert_status_code(response_get.status_code, HTTPStatus.UNPROCESSABLE_ENTITY)
         assert_get_file_with_incorrect_file_id_response(response_data)
         validate_json_schema(response_get.json(), response_data.model_json_schema())
