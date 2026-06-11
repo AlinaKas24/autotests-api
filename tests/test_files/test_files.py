@@ -1,7 +1,9 @@
 from http import HTTPStatus
 from pathlib import Path
 
+import allure
 import pytest
+from allure_commons.types import Severity
 
 from clients.errors_model import (
     ValidationErrorResponseModel,
@@ -15,6 +17,10 @@ from models.files_model import (
     CreateFileResponseModel,
     GetFileResponseModel,
 )
+from tools.allure.epics import AllureEpic
+from tools.allure.features import AllureFeature
+from tools.allure.stories import AllureStory
+from tools.allure.tags import AllureTag
 from tools.assertions.base import assert_status_code
 from tools.assertions.errors import assert_incorrect_file_id_errors_response
 from tools.assertions.files import (
@@ -32,18 +38,34 @@ file_path = ROOT_DIR / "testdata" / "files" / "image.png"
 
 @pytest.mark.files
 @pytest.mark.regression
+@allure.epic(AllureEpic.LMS)
+@allure.tag(AllureTag.REGRESSION, AllureTag.FILES)
+@allure.feature(AllureFeature.FILES)
 class TestFiles:
+
+    @allure.tag(AllureTag.CREATE_ENTITY)
+    @allure.story(AllureStory.CREATE_ENTITY)
+    @allure.severity(Severity.CRITICAL)
+    @allure.title("Create File")
     def test_create_file(self, files_client: FilesClient):
         request = CreateFileRequestModel(upload_file=str(file_path))
         response = files_client.create_file_api(request)
         response_data = CreateFileResponseModel.model_validate_json(response.text)
         assert response.status_code == HTTPStatus.OK
 
+    @allure.tag(AllureTag.GET_ENTITY)
+    @allure.story(AllureStory.GET_ENTITY)
+    @allure.severity(Severity.NORMAL)
+    @allure.title("Get File")
     def test_get_file(self, files_client: FilesClient, function_files: FileFixture):
         response = files_client.get_file_api(file_id=function_files.response.file.id)
         response_data = GetFileResponseModel.model_validate_json(response.text)
         print(response_data)
 
+    @allure.tag(AllureTag.VALIDATE_ENTITY)
+    @allure.story(AllureStory.VALIDATE_ENTITY)
+    @allure.severity(Severity.NORMAL)
+    @allure.title("Create File with empty filename")
     def test_create_file_with_empty_filename(self, files_client: FilesClient):
         request = CreateFileRequestModel(filename="", upload_file=str(file_path))
         response = files_client.create_file_api(request)
@@ -53,6 +75,10 @@ class TestFiles:
         assert_create_file_with_empy_file_name_response(response_data)
         validate_json_schema(response.json(), response_data.model_json_schema())
 
+    @allure.tag(AllureTag.VALIDATE_ENTITY)
+    @allure.story(AllureStory.VALIDATE_ENTITY)
+    @allure.severity(Severity.NORMAL)
+    @allure.title("Create File with empty directory")
     def test_create_file_with_empty_directory(self, files_client: FilesClient):
         request = CreateFileRequestModel(directory="", upload_file=str(file_path))
         response = files_client.create_file_api(request)
@@ -62,6 +88,10 @@ class TestFiles:
         assert_create_file_with_empy_directory_response(response_data)
         validate_json_schema(response.json(), response_data.model_json_schema())
 
+    @allure.tag(AllureTag.DELETE_ENTITY)
+    @allure.story(AllureStory.DELETE_ENTITY)
+    @allure.title("Delete File")
+    @allure.severity(Severity.NORMAL)
     def test_delete_file(self, files_client: FilesClient):
         request = CreateFileRequestModel(upload_file=str(file_path))
         response = files_client.create_file_api(request)
@@ -79,6 +109,10 @@ class TestFiles:
         assert_delete_file_not_found_response(response_data)
         validate_json_schema(response_get.json(), response_data.model_json_schema())
 
+    @allure.tag(AllureTag.VALIDATE_ENTITY)
+    @allure.story(AllureStory.VALIDATE_ENTITY)
+    @allure.severity(Severity.NORMAL)
+    @allure.title("Get File with incorrect file id")
     def test_incorrect_file_id_file(self, files_client: FilesClient):
         response_get = files_client.get_file_api(file_id="file_id")
         response_data = IncorrectFileIdErrorResponseModel.model_validate_json(
