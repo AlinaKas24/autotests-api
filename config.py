@@ -1,12 +1,13 @@
+from pathlib import Path
 from typing import Self
 
-from pydantic import BaseModel, HttpUrl, FilePath, DirectoryPath
+from pydantic import BaseModel, FilePath, HttpUrl
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class HTTPClientConfig(BaseModel):
-    url: HttpUrl
-    timeout: float
+    url: HttpUrl = "http://localhost:8000"
+    timeout: float = 100
 
     @property
     def client_url(self) -> str:
@@ -14,7 +15,7 @@ class HTTPClientConfig(BaseModel):
 
 
 class TestDataConfig(BaseModel):
-    image_png_file: FilePath
+    image_png_file: FilePath = Path("./testdata/files/image.png")
 
 
 class Settings(BaseSettings):
@@ -25,22 +26,17 @@ class Settings(BaseSettings):
         env_nested_delimiter=".",
     )
 
-    test_data: TestDataConfig
-    http_client: HTTPClientConfig
-    allure_results_dir: DirectoryPath
+    test_data: TestDataConfig = TestDataConfig()
+    http_client: HTTPClientConfig = HTTPClientConfig()
+
+    # Path вместо DirectoryPath
+    allure_results_dir: Path = Path("./allure-results")
 
     @classmethod
     def initialize(cls) -> Self:
-        allure_results_dir = DirectoryPath(
-            "./allure-results"
-        )  # Создаем объект пути к папке
-        allure_results_dir.mkdir(
-            exist_ok=True
-        )  # Создаем папку allure-results, если она не существует
-
-        # Передаем allure_results_dir в инициализацию настроек
-        return Settings(allure_results_dir=allure_results_dir)
+        settings = cls()
+        settings.allure_results_dir.mkdir(parents=True, exist_ok=True)
+        return settings
 
 
-# Теперь вызываем метод initialize
 settings = Settings.initialize()
