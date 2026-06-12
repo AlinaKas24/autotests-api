@@ -1,3 +1,5 @@
+import allure
+
 from models.courses_model import (
     CourseModel,
     GetCoursesResponseModel,
@@ -7,10 +9,18 @@ from models.courses_model import (
 )
 from tools.assertions.base import assert_equal, assert_length
 
+from tools.logger import get_logger  # Импортируем функцию для создания логгера
 
+logger = get_logger(
+    "COURSES_ASSERTIONS"
+)  # Создаем логгер с именем "COURSES_ASSERTIONS"
+
+
+@allure.step("Check update course response")
 def assert_update_course_response(
     request: UpdateCourseRequestModel, response: UpdateCourseResponseModel
 ):
+    logger.info("Check update course response")
     assert_equal(response.course.title, request.title, "title")
     assert_equal(response.course.maxScore, request.max_score, "max_score")
     assert_equal(response.course.minScore, request.min_score, "min_score")
@@ -20,6 +30,7 @@ def assert_update_course_response(
     )
 
 
+@allure.step("Check course")
 def assert_course(actual: CourseModel, expected: CourseModel):
     """
     Проверяет, что фактические данные курса соответствуют ожидаемым.
@@ -28,6 +39,7 @@ def assert_course(actual: CourseModel, expected: CourseModel):
     :param expected: Ожидаемые данные курса.
     :raises AssertionError: Если хотя бы одно поле не совпадает.
     """
+    logger.info("Check course")
     assert_equal(actual.id, expected.id, "id")
     assert_equal(actual.title, expected.title, "title")
     assert_equal(actual.max_score, expected.max_score, "max_score")
@@ -36,6 +48,7 @@ def assert_course(actual: CourseModel, expected: CourseModel):
     assert_equal(actual.estimated_time, expected.estimated_time, "estimated_time")
 
 
+@allure.step("Check get courses response")
 def assert_get_courses_response(
     get_courses_response: GetCoursesResponseModel,
     create_course_responses: list[CreateCourseResponseModel],
@@ -47,6 +60,7 @@ def assert_get_courses_response(
     :param create_course_responses: Список API ответов при создании курсов.
     :raises AssertionError: Если данные курсов не совпадают.
     """
+    logger.info("Check get courses response")
     assert_length(get_courses_response.courses, create_course_responses, "courses")
 
     for index, create_course_response in enumerate(create_course_responses):
