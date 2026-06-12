@@ -17,3 +17,4 @@ Faker~=40.21.0
 allure-python-commons~=2.16.0
 pydantic-settings~=2.14.1
 pytest-xdist == 3.6.1
+allure-pytest==2.15.0
