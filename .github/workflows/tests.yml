@@ -1,13 +1,12 @@
 name: API tests
 
-
 on:
   push:
     branches:
-      -main
+      - main
   pull_request:
     branches:
-      -main
+      - main
 jobs:
   run-tests:
     runs-on: ubuntu-latest
@@ -16,7 +15,7 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v6
 
-      - name: Set up python
+      - name: Set up Python
         uses: actions/setup-python@v6
         with:
           python-version: '3.12'
@@ -39,12 +38,12 @@ jobs:
 
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          python -m pip install --upgrade pip  
+          pip install -r requirements.txt  
 
-      - name: Run API test with pytest and generate Allure results
+      - name: Run API tests with pytest and generate Allure results
         run: |
-          pytest -m regression --alluredir=allure-results -n 2 
+          pytest -m regression --alluredir=allure-results --numprocesses 2 
 
       - name: Get Allure history
         uses: actions/checkout@v6
@@ -54,23 +53,17 @@ jobs:
           ref: gh-pages
           path: gh-pages
 
-      - name: Generate Allure report with history
-        uses: simple-elf/allure-report-action@v.1.14
+      - name: Generates Allure Report with history
+        uses: simple-elf/allure-report-action@v1.14
         if: always()
         with:
           allure_results: allure-results
           allure_history: allure-history
 
-      - name: Deploy to Github pages
+      - name: Deploy report to Github Pages
         if: always()
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          pyblish_branch: gh-pages
+          publish_branch: gh-pages
           publish_dir: allure-history
-
-
-
-
-
-
