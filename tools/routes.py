@@ -7,5 +7,3 @@ class APIRoutes(StrEnum):
     COURSES = "/api/v1/courses"
     EXERCISES = "/api/v1/exercises"
     AUTHENTICATION = "/api/v1/authentication"
-
-

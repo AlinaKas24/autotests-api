@@ -1,0 +1,8 @@
+uv.lock
+.idea/
+.venv/
+venv
+.env
+allure-results
+__pycache__
+allure-report
