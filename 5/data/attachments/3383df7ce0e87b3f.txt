@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/62b3c131-d759-4c51-8c4e-d531fc7e5944' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTEyVDEzOjQ1OjQyLjAyMjczNiIsInVzZXJfaWQiOiJiYzY0YmIwOC1hYTk5LTRjNzgtOWQ0NC01YTBiNTk0YTgyNDEifQ.Z0ft4MntJMbYm4r1uVYp0rdnC-uZ8Kge2hCsKX0WGwo' \
+  -H 'content-length: 274' \
+  -H 'content-type: application/json' \
+  -d '{"title":"State section head day decision.\nUp smile follow true chance. Purpose six response agree really state political guess.\nFood bar very trouble. National common soon fear go.","maxScore":88,"minScore":35,"description":"Call however push.","estimatedTime":"1 weeks"}'

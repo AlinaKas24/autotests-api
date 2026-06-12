@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTEyVDEzOjQ1OjQ2LjkxMzg4MyIsInVzZXJfaWQiOiIzZjQwMWZhOC03YjM0LTRiNTctYTUwZS1iNDA1Nzc3NWM1MTIifQ.hgE6ypE2lRd8D0Drf8j-2GLg4d9rM7gcsbXnY-70ihs' \
+  -H 'content-length: 428' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Eye she choice cover. Reason party final themselves fish.\nValue bill him cost song idea social blue. Character focus discover ground with. Card open chair perhaps figure trip section.","maxScore":76,"minScore":29,"description":"Pay loss speech federal listen understand budget.","estimatedTime":"8 weeks","previewFileId":"a16ee110-1ff5-4cd9-990e-65043780e039","createdByUserId":"3f401fa8-7b34-4b57-a50e-b4057775c512"}'

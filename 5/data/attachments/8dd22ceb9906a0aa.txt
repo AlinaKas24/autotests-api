@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTEyVDEzOjQ1OjQ0LjM0OTIxNyIsInVzZXJfaWQiOiIwYzM1ODhlOC01YmExLTQ2MzYtYmQ3YS1lODc4ZTM1N2NhZWEifQ.wY4mal1-dGeTO5g4kp2PkW_wsYfdAex6_z7gbOVOeJU' \
+  -H 'content-length: 434' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Town resource price specific. To arm somebody somebody specific fast.\nBest low herself nearly nation condition either. Car stop film up.\nConsider professor up. Rather pick safe join wind road next.","maxScore":82,"minScore":43,"description":"Trial including with hair stop need lot.","estimatedTime":"2 weeks","previewFileId":"42e6505a-4d8d-40bc-a959-00e4de005dde","createdByUserId":"0c3588e8-5ba1-4636-bd7a-e878e357caea"}'

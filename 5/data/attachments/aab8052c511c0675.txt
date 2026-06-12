@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTEyVDEzOjQ1OjQyLjAyMjczNiIsInVzZXJfaWQiOiJiYzY0YmIwOC1hYTk5LTRjNzgtOWQ0NC01YTBiNTk0YTgyNDEifQ.Z0ft4MntJMbYm4r1uVYp0rdnC-uZ8Kge2hCsKX0WGwo' \
+  -H 'content-length: 330' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Walk face nor dark structure responsibility. Discover town benefit citizen push. Human else from process.","maxScore":56,"minScore":25,"description":"Today wrong key fly phone use.","estimatedTime":"6 weeks","previewFileId":"d720b151-1a45-4076-ab1f-273d1e2cdbfd","createdByUserId":"bc64bb08-aa99-4c78-9d44-5a0b594a8241"}'

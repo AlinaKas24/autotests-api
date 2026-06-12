@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTEyVDEzOjQ1OjQ3LjkxOTI3OSIsInVzZXJfaWQiOiI0ZDcyMTdkZC01Njc5LTQ3NTYtYTYzNi1mMWE3NjhhNGJiZWEifQ.mzUDJky6KJhg9lNNYMJAwdfDrtUm-JN-C25pU-JwjDM' \
+  -H 'content-length: 312' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Side draw against stuff financial.","courseId":"7467798e-a23d-41bd-af19-0f399011266d","maxScore":90,"minScore":15,"orderIndex":61,"description":"Interest operation car benefit page couple up policy. Difference fish red.\nList person news local lay. Black through PM add you.","estimatedTime":"9 weeks"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTEyVDEzOjQ1OjQ4LjU3MzMxNSIsInVzZXJfaWQiOiI0ZDcyMTdkZC01Njc5LTQ3NTYtYTYzNi1mMWE3NjhhNGJiZWEifQ.G6tvt6FLqWioJwP545mgqs5j7XBWj80qDCu-Smh9MPQ' \
+  -H 'content-length: 424' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Effort player professional.\nIts weight consumer same what tree place represent. Him act whatever build small family page rest.\nShow star fight hair. Movie condition image hospital.","maxScore":51,"minScore":11,"description":"Whether shoulder job direction another culture.","estimatedTime":"4 weeks","previewFileId":"2a2f8130-b835-4c2b-bf43-67058f5d2376","createdByUserId":"4d7217dd-5679-4756-a636-f1a768a4bbea"}'

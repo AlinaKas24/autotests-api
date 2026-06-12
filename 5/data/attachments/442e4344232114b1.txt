@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTEyVDEzOjQ1OjQ1LjYzNTE2MyIsInVzZXJfaWQiOiJiZTYxOGE1OS1hNDdiLTQ5OWItOWY2OS1hZmM2MjBkMGQ4ZmMifQ.xGkV1oxHz-VouRooepSE-Iu7QU2SKCS0lqIQ-Q5NBgI' \
+  -H 'content-length: 347' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Join visit table bring base. Even alone control always may question animal nation. Become manager sort she give be.","maxScore":57,"minScore":39,"description":"Officer particular worker build mind.","estimatedTime":"4 weeks","previewFileId":"4847a428-aeee-4a6b-83e3-22cc1f7766d6","createdByUserId":"be618a59-a47b-499b-9f69-afc620d0d8fc"}'
