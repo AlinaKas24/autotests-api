@@ -6,6 +6,7 @@ from clients.private_http_builder import (
     AuthenticationUserModel,
 )
 from models.users_model import GetUserResponseModel, UpdateUserRequestModel
+from tools.routes import APIRoutes
 
 
 class PrivateUsersClient(ApiClient):
@@ -19,7 +20,7 @@ class PrivateUsersClient(ApiClient):
 
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.get("/api/v1/users/me")
+        return self.get(f"{APIRoutes.USERS}/me")
 
     def get_user_api(self, user_id: str) -> Response:
         """
@@ -28,7 +29,7 @@ class PrivateUsersClient(ApiClient):
         :param user_id: Идентификатор пользователя.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.get(f"/api/v1/users/{user_id}")
+        return self.get(f"{APIRoutes.USERS}/{user_id}")
 
     def update_user_api(
         self, user_id: str, request: UpdateUserRequestModel
@@ -40,7 +41,7 @@ class PrivateUsersClient(ApiClient):
         :param request: Словарь с email, lastName, firstName, middleName.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.patch(f"/api/v1/users/{user_id}", json=request)
+        return self.patch(f"{APIRoutes.USERS}/{user_id}", json=request)
 
     def delete_user_api(self, user_id: str) -> Response:
         """
@@ -49,7 +50,7 @@ class PrivateUsersClient(ApiClient):
         :param user_id: Идентификатор пользователя.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.delete(f"/api/v1/users/{user_id}")
+        return self.delete(f"{APIRoutes.USERS}/{user_id}")
 
     # Добавили новый метод
     def get_user(self, user_id: str) -> GetUserResponseModel:

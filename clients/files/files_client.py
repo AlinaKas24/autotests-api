@@ -8,6 +8,7 @@ from clients.private_http_builder import (
     AuthenticationUserModel,
 )
 from models.files_model import CreateFileRequestModel, CreateFileResponseModel
+from tools.routes import APIRoutes
 
 
 class FilesClient(ApiClient):
@@ -23,7 +24,7 @@ class FilesClient(ApiClient):
         :return: Ответ от сервера в виде объекта httpx.Response
         """
 
-        return self.get(f"/api/v1/files/{file_id}")
+        return self.get(f"{APIRoutes.FILES}/{file_id}")
 
     def delete_file_api(self, file_id: str) -> Response:
         """
@@ -33,7 +34,7 @@ class FilesClient(ApiClient):
         :return: Ответ от сервера в виде объекта httpx.Response
         """
 
-        return self.delete(f"/api/v1/files/{file_id}")
+        return self.delete(f"{APIRoutes.FILES}/{file_id}")
 
     def create_file_api(self, request: CreateFileRequestModel) -> Response:
         file_path = Path(request.upload_file).resolve()
@@ -45,7 +46,7 @@ class FilesClient(ApiClient):
         """
 
         return self.post(
-            f"/api/v1/files",
+            f"{APIRoutes.FILES}",
             data=request.model_dump(by_alias=True),
             files={"upload_file": open(file_path, "rb")},
         )

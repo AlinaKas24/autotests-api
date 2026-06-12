@@ -1,3 +1,6 @@
+import sys
+import platform
+
 from config import settings
 
 
@@ -11,6 +14,8 @@ def create_allure_environment_file():
         else:
             items.append(f"{key}={value}")
 
+    items.append(f"os_info={platform.system()}, {platform.release()}")
+    items.append(f"python_version={sys.version}")
     properties = "\n".join(items)
 
     with open(

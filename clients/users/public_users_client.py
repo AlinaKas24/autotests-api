@@ -8,6 +8,7 @@ from models.pydantic_create_user_model import (
     CreateUserRequestSchema,
     CreateUserResponseSchema,
 )
+from tools.routes import APIRoutes
 
 
 class PublicUsersClient(ApiClient):
@@ -25,7 +26,7 @@ class PublicUsersClient(ApiClient):
         :param request: Словарь с email, password, lastName, firstName, middleName.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.post("/api/v1/users", json=request.model_dump(by_alias=True))
+        return self.post(f"{APIRoutes.USERS}", json=request.model_dump(by_alias=True))
 
     # Добавили новый метод
     def create_user(self, request: CreateUserRequestSchema) -> CreateUserResponseSchema:

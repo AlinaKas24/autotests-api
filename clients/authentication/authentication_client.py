@@ -7,6 +7,7 @@ from models.authentication_model import (
     RefreshRequestModel,
     LoginResponseModel,
 )
+from tools.routes import APIRoutes
 
 
 class AuthenticationClient(ApiClient):
@@ -23,7 +24,7 @@ class AuthenticationClient(ApiClient):
         """
 
         return self.post(
-            "/api/v1/authentication/login", json=request.model_dump(by_alias=True)
+            f"{APIRoutes.AUTHENTICATION}/login", json=request.model_dump(by_alias=True)
         )
 
     def refresh_api(self, request: RefreshRequestModel) -> Response:
@@ -34,7 +35,8 @@ class AuthenticationClient(ApiClient):
         :return: Ответ от сервера в виде объекта httpx.Response
         """
         return self.post(
-            "/api/v1/authentication/refresh", json=request.model_dump(by_alias=True)
+            f"{APIRoutes.AUTHENTICATION}/refresh",
+            json=request.model_dump(by_alias=True),
         )
 
     def login(self, request: LoginRequestModel) -> LoginResponseModel:
