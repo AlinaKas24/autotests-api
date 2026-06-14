@@ -10,8 +10,8 @@ class TokenModel(BaseModel):
 
 
 class LoginRequestModel(BaseModel):
-    email: str = Field(default_factory=fake.email())
-    password: str = Field(default_factory=fake.password())
+    email: str = Field(default_factory=fake.email)
+    password: str = Field(default_factory=fake.password)
 
 
 class RefreshRequestModel(BaseModel):
