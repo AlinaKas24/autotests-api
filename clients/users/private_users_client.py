@@ -1,6 +1,7 @@
 from httpx import Response
 
 from clients.api_client import ApiClient
+from clients.api_coverage import tracker
 from clients.private_http_builder import (
     get_private_http_client,
     AuthenticationUserModel,
@@ -14,6 +15,7 @@ class PrivateUsersClient(ApiClient):
     Клиент для работы с /api/v1/users
     """
 
+    @tracker.track_coverage_httpx(f"{APIRoutes.USERS}/me")
     def get_user_me_api(self) -> Response:
         """
         Метод получения текущего пользователя.
@@ -22,6 +24,7 @@ class PrivateUsersClient(ApiClient):
         """
         return self.get(f"{APIRoutes.USERS}/me")
 
+    @tracker.track_coverage_httpx(f"{APIRoutes.USERS}/{{user_id}}")
     def get_user_api(self, user_id: str) -> Response:
         """
         Метод получения пользователя по идентификатору.
@@ -31,6 +34,7 @@ class PrivateUsersClient(ApiClient):
         """
         return self.get(f"{APIRoutes.USERS}/{user_id}")
 
+    @tracker.track_coverage_httpx(f"{APIRoutes.USERS}/{{user_id}}")
     def update_user_api(
         self, user_id: str, request: UpdateUserRequestModel
     ) -> Response:
@@ -43,6 +47,7 @@ class PrivateUsersClient(ApiClient):
         """
         return self.patch(f"{APIRoutes.USERS}/{user_id}", json=request)
 
+    @tracker.track_coverage_httpx(f"{APIRoutes.USERS}/{{user_id}}")
     def delete_user_api(self, user_id: str) -> Response:
         """
         Метод удаления пользователя по идентификатору.

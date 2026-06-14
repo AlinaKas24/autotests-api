@@ -17,3 +17,4 @@ Faker~=40.21.0
 pydantic-settings~=2.14.1
 pytest-xdist==3.6.1
 allure-pytest~=2.16.0
+swagger-coverage-tool==0.33.0

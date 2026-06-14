@@ -3,6 +3,7 @@ from pathlib import Path
 from httpx import Response
 
 from clients.api_client import ApiClient
+from clients.api_coverage import tracker
 from clients.private_http_builder import (
     get_private_http_client,
     AuthenticationUserModel,
@@ -16,6 +17,7 @@ class FilesClient(ApiClient):
     Клиент для работы с приватными эндпоинтами
     """
 
+    @tracker.track_coverage_httpx(f"{APIRoutes.FILES}/{{file_id}}")
     def get_file_api(self, file_id: str) -> Response:
         """
         Метод получения файла.
@@ -26,6 +28,7 @@ class FilesClient(ApiClient):
 
         return self.get(f"{APIRoutes.FILES}/{file_id}")
 
+    @tracker.track_coverage_httpx(f"{APIRoutes.FILES}/{{file_id}}")
     def delete_file_api(self, file_id: str) -> Response:
         """
         Метод удаления файла.
@@ -36,6 +39,7 @@ class FilesClient(ApiClient):
 
         return self.delete(f"{APIRoutes.FILES}/{file_id}")
 
+    @tracker.track_coverage_httpx(f"{APIRoutes.FILES}")
     def create_file_api(self, request: CreateFileRequestModel) -> Response:
         file_path = Path(request.upload_file).resolve()
         """

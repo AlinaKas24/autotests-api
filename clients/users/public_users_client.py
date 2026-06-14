@@ -3,6 +3,7 @@ from typing import TypedDict
 from httpx import Response
 
 from clients.api_client import ApiClient
+from clients.api_coverage import tracker
 from clients.public_http_builder import get_public_http_client
 from models.pydantic_create_user_model import (
     CreateUserRequestSchema,
@@ -16,6 +17,7 @@ class PublicUsersClient(ApiClient):
     Клиент для работы с /api/v1/users
     """
 
+    @tracker.track_coverage_httpx(f"{APIRoutes.USERS}")
     def create_user_api(
         self,
         request: CreateUserRequestSchema,

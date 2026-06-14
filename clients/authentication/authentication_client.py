@@ -1,6 +1,7 @@
 from httpx import Response
 
 from clients.api_client import ApiClient
+from clients.api_coverage import tracker
 from clients.public_http_builder import get_public_http_client
 from models.authentication_model import (
     LoginRequestModel,
@@ -15,6 +16,7 @@ class AuthenticationClient(ApiClient):
     Клиент для работы с /api/v1/authentication
     """
 
+    @tracker.track_coverage_httpx(f"{APIRoutes.AUTHENTICATION}/login")
     def login_api(self, request: LoginRequestModel) -> Response:
         """
         Метод выполняет аутентификацию пользователя.
@@ -27,6 +29,7 @@ class AuthenticationClient(ApiClient):
             f"{APIRoutes.AUTHENTICATION}/login", json=request.model_dump(by_alias=True)
         )
 
+    @tracker.track_coverage_httpx(f"{APIRoutes.AUTHENTICATION}/refresh")
     def refresh_api(self, request: RefreshRequestModel) -> Response:
         """
         Метод обновляет токен авторизации.

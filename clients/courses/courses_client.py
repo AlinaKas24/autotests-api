@@ -1,6 +1,7 @@
 from httpx import Response
 
 from clients.api_client import ApiClient
+from clients.api_coverage import tracker
 from clients.private_http_builder import (
     AuthenticationUserModel,
     get_private_http_client,
@@ -19,6 +20,7 @@ class CoursesClient(ApiClient):
     Клиент для работы с /api/v1/courses
     """
 
+    @tracker.track_coverage_httpx(f"{APIRoutes.COURSES}")
     def get_courses_api(self, query: GetCoursesQueryModel) -> Response:
         """
         Метод получения списка курсов.
@@ -28,6 +30,7 @@ class CoursesClient(ApiClient):
         """
         return self.get(f"{APIRoutes.COURSES}", params=query.model_dump(by_alias=True))
 
+    @tracker.track_coverage_httpx(f"{APIRoutes.COURSES}/{{course_id}}")
     def get_course_api(self, course_id: str) -> Response:
         """
         Метод получения курса.
@@ -37,6 +40,7 @@ class CoursesClient(ApiClient):
         """
         return self.get(f"{APIRoutes.COURSES}/{course_id}")
 
+    @tracker.track_coverage_httpx(f"{APIRoutes.COURSES}")
     def create_course_api(self, request: CreateCourseRequestModel) -> Response:
         """
         Метод создания курса.
@@ -47,6 +51,7 @@ class CoursesClient(ApiClient):
         """
         return self.post(f"{APIRoutes.COURSES}", json=request.model_dump(by_alias=True))
 
+    @tracker.track_coverage_httpx(f"{APIRoutes.COURSES}/{{course_id}}")
     def update_course_api(
         self, course_id: str, request: UpdateCourseRequestModel
     ) -> Response:
@@ -61,6 +66,7 @@ class CoursesClient(ApiClient):
             f"{APIRoutes.COURSES}/{course_id}", json=request.model_dump(by_alias=True)
         )
 
+    @tracker.track_coverage_httpx(f"{APIRoutes.COURSES}/{{course_id}}")
     def delete_course_api(self, course_id: str) -> Response:
         """
         Метод удаления курса.

@@ -1,6 +1,7 @@
 from httpx import Response
 
 from clients.api_client import ApiClient
+from clients.api_coverage import tracker
 from clients.private_http_builder import (
     AuthenticationUserModel,
     get_private_http_client,
@@ -21,7 +22,7 @@ class ExercisesClient(ApiClient):
     """
     Клиент для работы с /api/v1/exercises
     """
-
+    @tracker.track_coverage_httpx(f"{APIRoutes.EXERCISES}")
     def get_exercises_api(self, query: GetExercisesQueryModel) -> Response:
         """
         Метод получения списка заданий.
@@ -33,6 +34,7 @@ class ExercisesClient(ApiClient):
             f"{APIRoutes.EXERCISES}", params=query.model_dump(by_alias=True)
         )
 
+    @tracker.track_coverage_httpx(f"{APIRoutes.EXERCISES}/{{exercise_id}}")
     def get_exercise_api(self, exercise_id: str) -> Response:
         """
         Метод получения задания.
@@ -42,6 +44,7 @@ class ExercisesClient(ApiClient):
         """
         return self.get(f"{APIRoutes.EXERCISES}/{exercise_id}")
 
+    @tracker.track_coverage_httpx(f"{APIRoutes.EXERCISES}")
     def create_exercise_api(self, request: CreateExerciseRequestModel) -> Response:
         """
         Метод создания задания.
@@ -53,6 +56,7 @@ class ExercisesClient(ApiClient):
             f"{APIRoutes.EXERCISES}", json=request.model_dump(by_alias=True)
         )
 
+    @tracker.track_coverage_httpx(f"{APIRoutes.EXERCISES}/{{exercise_id}}")
     def update_exercise_api(
         self, exercise_id: str, request: UpdateExerciseRequestModel
     ) -> Response:
@@ -68,6 +72,7 @@ class ExercisesClient(ApiClient):
             json=request.model_dump(by_alias=True),
         )
 
+    @tracker.track_coverage_httpx(f"{APIRoutes.EXERCISES}/{{exercise_id}}")
     def delete_exercise_api(self, exercise_id: str) -> Response:
         """
         Метод удаления задания.
