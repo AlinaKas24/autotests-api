@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE0VDE1OjQ4OjQ0LjE2NTkxMiIsInVzZXJfaWQiOiI3ZmUzZDY3Ni1jZjlhLTQ2ODAtODhkZi03NDE1YmQyYjYwYzAifQ.SVY-oijBp_-jtF362z2j5HBSgWIzJtdbw5k3xTxe3Bo' \
+  -H 'content-length: 346' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Side their across area team week card across.","courseId":"5f318831-5cb1-4d8d-9b44-9998afc30664","maxScore":90,"minScore":2,"orderIndex":33,"description":"Benefit clear hair. On participant measure reason special. Government claim speak money affect late especially. Least issue base get total crime reduce.","estimatedTime":"10 weeks"}'

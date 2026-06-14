@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE0VDE1OjQ4OjQzLjUyMTk3MiIsInVzZXJfaWQiOiIxM2E5NDZjYi0zODFhLTQwZTMtOTEzZS1mODM5OTM0M2JiZmUifQ.A6BvhO0Hnn231DUI1eN5Sc1Z57G7CPfbcDymCbbWmMQ' \
+  -H 'content-length: 401' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Social entire size cold wonder just here. More condition drop number dream control owner. Nearly end trial feel.\nLet bill meet kind far how. Environmental oil opportunity artist.","maxScore":55,"minScore":2,"description":"Too thus item election sign.","estimatedTime":"2 weeks","previewFileId":"bef229ff-e44b-4ceb-b55d-694793f2b812","createdByUserId":"13a946cb-381a-40e3-913e-f8399343bbfe"}'

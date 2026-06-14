@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE0VDE1OjQ4OjQwLjg2NDYyOSIsInVzZXJfaWQiOiIxYmVmNTI3NS00MzUzLTRlMmItOTIzZC00N2JhNmRlYTNlZDQifQ.D1aATKsETEqlMsGSPHhcZ2bYjUIQShjwUvdOna6FHSs' \
+  -H 'content-length: 350' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Decade base movie budget phone she follow. Reflect option expect both among. To garden rather position finish this.","maxScore":75,"minScore":24,"description":"Act part my medical Democrat second off.","estimatedTime":"9 weeks","previewFileId":"26793d72-8cf6-44fe-bcb5-979152b724c3","createdByUserId":"1bef5275-4353-4e2b-923d-47ba6dea3ed4"}'

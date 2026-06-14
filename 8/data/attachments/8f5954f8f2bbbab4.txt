@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE0VDE1OjQ4OjQxLjc5NDk2OSIsInVzZXJfaWQiOiJkY2JiYzExYi1mMjgxLTQ0NzItYWM4Zi0yNGEyOWJhZGQyZWMifQ.4vbDmuHeXzKOUInNuW7uxVDCAPv4VsLDtSBO-9j8b7k' \
+  -H 'content-length: 341' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Old star house.","courseId":"a8fe9184-038d-4284-8050-f901346b16a9","maxScore":89,"minScore":48,"orderIndex":58,"description":"Thought peace ready memory culture position win another. Amount effort woman stage.\nAs night meeting. Over high employee both.\nSeat different image forward word girl continue.","estimatedTime":"9 weeks"}'

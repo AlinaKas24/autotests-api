@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/b5230226-7ae3-4773-a01e-5a9667b683fc' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE0VDE1OjQ4OjM3LjI2NzA5NCIsInVzZXJfaWQiOiJhMmM0YmFkZS1jOTEyLTRkZGItYmM2OC00ZGEwZjMxODJkNDAifQ.-vsuoJY-h93oTy1hbwL98yY5tBIez9teFt2shHxOVUg' \
+  -H 'content-length: 250' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Anything memory speak site single material measure. Several protect manage child.\nLook president born computer. After seat American contain.","maxScore":97,"minScore":17,"description":"Like mind deal apply else.","estimatedTime":"6 weeks"}'

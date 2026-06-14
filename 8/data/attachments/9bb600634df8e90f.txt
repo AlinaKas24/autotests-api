@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE0VDE1OjQ4OjM2LjAwMjg2NCIsInVzZXJfaWQiOiJkYjg1NDg4YS02OWU5LTQxZmUtOTMyOS03OGNjNTEyOGZhMGMifQ.p2OeGQnipVtElXamAe5ZzRV0JZmvMlR47m_ZvZBh1n0' \
+  -H 'content-length: 372' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Member attack about job wear less might. A pretty lead hundred organization shake. Less soldier court station article international remember.","maxScore":78,"minScore":34,"description":"Relate both his focus care practice.","estimatedTime":"1 weeks","previewFileId":"cb2732fa-7b83-4eaf-8e53-d303b213a736","createdByUserId":"db85488a-69e9-41fe-9329-78cc5128fa0c"}'

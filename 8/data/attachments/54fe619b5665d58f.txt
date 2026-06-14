@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE0VDE1OjQ4OjQzLjE2Njg4NiIsInVzZXJfaWQiOiIxM2E5NDZjYi0zODFhLTQwZTMtOTEzZS1mODM5OTM0M2JiZmUifQ.cP1BnHL3tpq_71YT2VoPko8xgv517RspP30hb033N-k' \
+  -H 'content-length: 360' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Finish increase under factor cold second.","courseId":"a70de86b-c74a-4e67-ba5b-bf9f68661faf","maxScore":57,"minScore":40,"orderIndex":15,"description":"Bring make evening.\nSummer part drug company success Democrat. Accept week local how education campaign. Effect term nation Mr. Great identify lot special wall on stock.","estimatedTime":"6 weeks"}'

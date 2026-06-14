@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE0VDE1OjQ4OjM5LjU4NzE0MSIsInVzZXJfaWQiOiI0ODcxZGNhZC1hYmMwLTQyNTItOWRiZi03OWI0ZjdiYWQwMGIifQ.k50ZUkZNf5WCYp5dH-d8CqHVlR6dSoSC-ESqVhdrg9U' \
+  -H 'content-length: 406' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Occur back several leave. Add speak wear particular piece of.\nArrive everything away staff. Which focus star.\nDevelopment serve remain my camera station subject. Similar before live.","maxScore":76,"minScore":48,"description":"When audience during begin.","estimatedTime":"7 weeks","previewFileId":"f4abaeb2-41b4-447c-b11f-b24f97b724a5","createdByUserId":"4871dcad-abc0-4252-9dbf-79b4f7bad00b"}'

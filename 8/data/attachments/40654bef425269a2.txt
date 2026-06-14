@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE0VDE1OjQ4OjM4LjIzMTQzMSIsInVzZXJfaWQiOiI3MzhiOWM4Zi0yMWExLTQ2M2QtYTBkOC1mNzVjYTExMTNhNDIifQ.E8bRuX5yaP_a5SI0nsrTjwqr5pRHRefOh4Y9jnrnhb0' \
+  -H 'content-length: 431' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Man someone listen hit although. Action movement impact shake. Also great back seem window along.\nHit pick provide election. Court indeed real reason sound major. Book expert save land.","maxScore":64,"minScore":23,"description":"Expect budget star of choose glass position occur.","estimatedTime":"4 weeks","previewFileId":"a67670e7-a213-41b0-81e6-4730581403ff","createdByUserId":"738b9c8f-21a1-463d-a0d8-f75ca1113a42"}'

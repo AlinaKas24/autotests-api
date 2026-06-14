@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE0VDE1OjQ4OjQ0Ljc4MzMwMiIsInVzZXJfaWQiOiI3ZmUzZDY3Ni1jZjlhLTQ2ODAtODhkZi03NDE1YmQyYjYwYzAifQ.97uiTY8gLqEs0M200WRDHE9UWALRJ8Ylr2--YG_vSLw' \
+  -H 'content-length: 424' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Discover able with. Collection save ground mean item business.\nDown make worry say sea fish. Almost college record score fly.\nA door sit catch. Real popular several defense least front.","maxScore":57,"minScore":8,"description":"Everyone down peace teach safe matter home.","estimatedTime":"8 weeks","previewFileId":"7b088c40-8e16-4b2d-bd98-8d9f3996202b","createdByUserId":"7fe3d676-cf9a-4680-88df-7415bd2b60c0"}'
