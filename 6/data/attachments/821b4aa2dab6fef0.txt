@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE0VDE0OjUwOjU2LjUwMjMyOSIsInVzZXJfaWQiOiIzNDU1YzJmYy0yMWMwLTQ1M2YtYWZiZS0zZDRlYzVkZTdkNDAifQ.x8BQ0F6CY01t_wJRvILUFV35LYWl-X0uAv6kZ6k8Y78' \
+  -H 'content-length: 418' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Far you put make senior take commercial. Tree war international thank wait might.\nPressure increase yeah myself. Quickly here strategy. Good seven record choose. Challenge true recognize enter look.","maxScore":56,"minScore":5,"description":"National growth its else.","estimatedTime":"3 weeks","previewFileId":"adb52cfa-3109-42f9-af35-0a4fb2aa1721","createdByUserId":"3455c2fc-21c0-453f-afbe-3d4ec5de7d40"}'

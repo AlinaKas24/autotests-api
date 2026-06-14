@@ -1,0 +1,24 @@
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals to 200
+INFO     SHEMA_ASSERTIONS:schema.py:13 Validate JSON shema
+INFO     EXERCISES_ASSERTIONS:exercise.py:32 Check create exercise response
+INFO     BASE_ASSERTIONS:base.py:37 Check that "title" equals to Five improve bank never.
+INFO     BASE_ASSERTIONS:base.py:37 Check that "course_id" equals to cd5e2794-b8b0-4ea5-b609-e58bbbdf2916
+INFO     BASE_ASSERTIONS:base.py:37 Check that "min_score" equals to 24
+INFO     BASE_ASSERTIONS:base.py:37 Check that "max_score" equals to 70
+INFO     BASE_ASSERTIONS:base.py:37 Check that "order_index" equals to 24
+INFO     BASE_ASSERTIONS:base.py:37 Check that "description" equals to Movement send individual shake market. System civil city free plant. Entire several attack seat him. Wind always western available computer rest American.
+INFO     BASE_ASSERTIONS:base.py:37 Check that "estimated_time" equals to 8 weeks

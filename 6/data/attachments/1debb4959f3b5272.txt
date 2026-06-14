@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE0VDE0OjUxOjAwLjg4MDcwNiIsInVzZXJfaWQiOiJlNzYxY2NiOS1mYWE1LTQ4YzAtOGYxZC01OTE0NTIwZTE0MjEifQ.C0hn3ouGZJhMFLwIioRdHxJV4vtP5YkGiL1OT7RzarA' \
+  -H 'content-length: 373' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Page out always decision oil arrive law. Administration mission appear peace. Action field foreign style effort. Hotel along other street whole method.","maxScore":65,"minScore":26,"description":"Memory reduce should point.","estimatedTime":"7 weeks","previewFileId":"c0ce8e7c-4aa4-44ad-9040-aa2ab2bf360a","createdByUserId":"e761ccb9-faa5-48c0-8f1d-5914520e1421"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE0VDE0OjUwOjU5Ljc0MDYzNCIsInVzZXJfaWQiOiI2OWQ3YjlhNy0yOTQwLTRkYjQtYTllYS0wZDVlMGVjNTdkMjEifQ._0hXjADe5tcPhQkKu8CY-sjXxZW3fYaWEL4qh1Hj-7I' \
+  -H 'content-length: 386' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Often single month.\nDay we build against step. Daughter better sound boy total.\nNever news easy everyone play. Pull decide soon. Maintain exist a sport.","maxScore":94,"minScore":14,"description":"Final piece direction station budget.","estimatedTime":"1 weeks","previewFileId":"40fc139d-cee3-423b-bd6c-4115707cd296","createdByUserId":"69d7b9a7-2940-4db4-a9ea-0d5e0ec57d21"}'

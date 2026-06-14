@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE0VDE0OjUwOjU1LjM2MjUwMSIsInVzZXJfaWQiOiIyNGVkMjZjZi1jYmI2LTRkN2UtOTdiNC0wNTlkZmI2NDEwZjEifQ.nqgT8MZNNMSnNEvMi5Veyb0CT5HmGJ0sgcK9KXYaMWc' \
+  -H 'content-length: 424' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Born see husband identify.\nLoss such anyone tonight reflect piece. Instead could hair around poor key. Debate relationship expert skill.\nExactly might seem focus. Those remain method up also.","maxScore":77,"minScore":14,"description":"Note have color understand oil card.","estimatedTime":"2 weeks","previewFileId":"b7e78bff-a255-4890-af12-27d906cd7a0c","createdByUserId":"24ed26cf-cbb6-4d7e-97b4-059dfb6410f1"}'

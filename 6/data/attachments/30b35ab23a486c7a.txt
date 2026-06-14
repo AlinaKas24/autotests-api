@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE0VDE0OjUxOjAyLjEwMTE2MCIsInVzZXJfaWQiOiI3NWJkMmQ1YS0zY2NmLTQ1MWMtYjE5MS1lM2FjYjJkZTMzODMifQ.haL9bTqshpgTOtv20oWid5aW7eMbXLOE7JDPMCMNSlw' \
+  -H 'content-length: 448' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Practice receive goal drive. Senior fish police major upon always writer. Owner cup interesting recently page.\nHer major choose cup lay three professor. Cultural section try everything name lead.","maxScore":67,"minScore":20,"description":"Choose skin piece though continue stock participant pick.","estimatedTime":"6 weeks","previewFileId":"0784aea6-06df-4021-9ccd-3701a288e32e","createdByUserId":"75bd2d5a-3ccf-451c-b191-e3acb2de3383"}'

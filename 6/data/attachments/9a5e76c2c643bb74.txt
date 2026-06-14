@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE0VDE0OjUxOjAzLjIxNzkyOCIsInVzZXJfaWQiOiIwZGRkMTgzZC00YTIwLTQxYzQtYTM5MC1jN2I5OTc3OGUwMTcifQ.4BqQbc-9CAWt5xBq6WO4JJdxkMCoipTVMhDUQxzwM1o' \
+  -H 'content-length: 361' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Bring center perform analysis total cover community.\nBeyond eat medical spring these. Unit room public structure wonder in.","maxScore":73,"minScore":17,"description":"See order energy American window identify.","estimatedTime":"3 weeks","previewFileId":"d8da6aa7-35b9-4bb1-acfe-2e7c991f2eaf","createdByUserId":"0ddd183d-4a20-41c4-a390-c7b99778e017"}'

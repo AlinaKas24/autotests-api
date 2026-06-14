@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE0VDE0OjUwOjU4LjU5MjUwMCIsInVzZXJfaWQiOiI0NzQyYmU2ZC0yMzAzLTQ4ODctYjcwMC0xN2RlMTRiMDRmYTMifQ.aBQdk9D-EodWqX1N3kjvmKgOlfVWiJzfu1Q-rA4MQT4' \
+  -H 'content-length: 370' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Issue magazine others the view.\nPut onto medical politics. Chair forward civil much feeling social.\nEat will do describe fly state we.","maxScore":64,"minScore":40,"description":"Figure water very police contain great.","estimatedTime":"3 weeks","previewFileId":"1fbd3319-966a-483b-8333-0d92b39a4336","createdByUserId":"4742be6d-2303-4887-b700-17de14b04fa3"}'
