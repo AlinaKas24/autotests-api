@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE1VDEzOjMzOjM4LjEzMTU2NSIsInVzZXJfaWQiOiI2NTVkYzk2OS0xMzJiLTQxNTAtYThkZS05MjJjOTMwNDYxNmIifQ.2AmMAsfMMA0JoljZpAz4-AJ4K6uEpq37XtNyxSqJnm4' \
+  -H 'content-length: 333' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Film picture particularly language. Peace knowledge office performance explain born success cup.","maxScore":91,"minScore":11,"description":"Yard threat above billion total show push.","estimatedTime":"8 weeks","previewFileId":"999b54dd-7760-4138-a53f-525375a9e8bf","createdByUserId":"655dc969-132b-4150-a8de-922c9304616b"}'

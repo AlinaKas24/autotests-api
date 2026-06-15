@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE1VDEzOjMzOjM5LjQ4MjI4NSIsInVzZXJfaWQiOiJmMzM5ZTlkYi1lNGM4LTRkMGEtOTc5MC02MWZjZTZhOWI1N2YifQ.fRmWVcCfKLynp-fQEtS2bWI38smyeETcIfsPyuQLj4c' \
+  -H 'content-length: 359' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Build movement history. End least mind direction car detail.\nState price stand example herself everything call. Available cover environment her.","maxScore":84,"minScore":14,"description":"Family car project.","estimatedTime":"1 weeks","previewFileId":"56199ccb-8153-490f-9046-02a75403a1fb","createdByUserId":"f339e9db-e4c8-4d0a-9790-61fce6a9b57f"}'

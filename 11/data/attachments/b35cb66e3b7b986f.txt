@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/2b82cb96-0605-4b56-afa8-5c535d549d18' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE1VDEzOjMzOjM3LjE2MTM0NSIsInVzZXJfaWQiOiJkYjMyMTRjYS0yMzI3LTQzMGYtYWE5My00ZWEyMzE0NmJhMzcifQ.Dm8pOz4lKuQQXTLZFCBh7AjlMvxXISMdg8ZIup3EQpw' \
+  -H 'content-length: 280' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Need talk agent peace. Television plant picture.\nWhom business ball second both Mr third. Former to mouth these.\nClaim cup improve military. Thing line page customer herself.","maxScore":65,"minScore":13,"description":"Which there day hour.","estimatedTime":"8 weeks"}'

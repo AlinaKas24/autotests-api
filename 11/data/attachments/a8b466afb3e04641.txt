@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE1VDEzOjMzOjQ0LjY5MjY2NyIsInVzZXJfaWQiOiIzMTQyYmU0MS0wNGU3LTQ1ZjgtOGU3OC02MDY2ZGZiZDBlZmEifQ.dBcxPDaNPUGtiLl5i_J2wAm3uwaqUCdMXa1meDv4Z6w' \
+  -H 'content-length: 371' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Several specific security single certainly everybody scene. Baby performance western data them. Start cultural design buy eye late.","maxScore":85,"minScore":31,"description":"Center start mission example meet draw alone.","estimatedTime":"6 weeks","previewFileId":"8e42cb11-e3e4-452b-9fa5-4fc5861c2bd3","createdByUserId":"3142be41-04e7-45f8-8e78-6066dfbd0efa"}'

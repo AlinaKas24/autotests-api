@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE1VDEzOjMzOjQxLjY5NzQzNiIsInVzZXJfaWQiOiIyYWY0NjE4Yy1lYWYxLTRmMzktYjg2My0yNjYzODJhMzE2OWUifQ.z26nkYkjdy4yZGNaV6uDIXVn20suZBkVdWH_bwpgFLE' \
+  -H 'content-length: 379' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Guy matter particularly discover.","courseId":"07517695-c678-4888-a662-296d401001d8","maxScore":68,"minScore":42,"orderIndex":35,"description":"Stop who rest near director south. Body low reduce investment star.\nChoose seven system sometimes. Effect however scene green. Six human guy rich act. Want leg national before join child American.","estimatedTime":"1 weeks"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE1VDEzOjMzOjQzLjQxMDg3NSIsInVzZXJfaWQiOiI5ZWE3YzQ1MC0xYmU3LTQ5ZDYtOGQwNS1iYTA0NTY4ZmNiMzcifQ.ZtoNirzGgfl3LgzJ32P7eLpUAmf0hJFB_kQuBVU68tA' \
+  -H 'content-length: 419' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Audience agent partner none. Career thought moment media impact. Side art must.\nRisk they with. These candidate wait party black compare now. Energy notice station many north sometimes.","maxScore":54,"minScore":22,"description":"Man mission pick respond floor little.","estimatedTime":"2 weeks","previewFileId":"d5208568-e9e0-4342-bfc1-c2c02df20998","createdByUserId":"9ea7c450-1be7-49d6-8d05-ba04568fcb37"}'

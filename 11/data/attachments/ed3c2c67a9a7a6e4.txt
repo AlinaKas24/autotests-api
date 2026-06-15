@@ -1,0 +1,30 @@
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:24 Make GET request to http://localhost:8000/api/v1/exercises?courseId=216adb0e-3ba4-4805-adda-c0c367d2e9de
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/exercises?courseId=216adb0e-3ba4-4805-adda-c0c367d2e9de
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercise.py:123 Check get exercises response
+INFO     BASE_ASSERTIONS:base.py:53 Check that "exercises" equals to 1
+INFO     EXERCISES_ASSERTIONS:exercise.py:53 Check exercise
+INFO     BASE_ASSERTIONS:base.py:37 Check that "id" equals to d4754c35-14ad-444d-98ba-7cf77b602c3f
+INFO     BASE_ASSERTIONS:base.py:37 Check that "title" equals to Music occur character age notice mission first.
+INFO     BASE_ASSERTIONS:base.py:37 Check that "course_id" equals to 216adb0e-3ba4-4805-adda-c0c367d2e9de
+INFO     BASE_ASSERTIONS:base.py:37 Check that "max_score" equals to 82
+INFO     BASE_ASSERTIONS:base.py:37 Check that "min_score" equals to 8
+INFO     BASE_ASSERTIONS:base.py:37 Check that "order_index" equals to 12
+INFO     BASE_ASSERTIONS:base.py:37 Check that "description" equals to Senior investment box rock company enter security process. Prepare education all perhaps admit. Beyond road different plan exactly.
+Responsibility build only mean many game second.
+INFO     BASE_ASSERTIONS:base.py:37 Check that "estimated_time" equals to 5 weeks
+INFO     SHEMA_ASSERTIONS:schema.py:13 Validate JSON shema

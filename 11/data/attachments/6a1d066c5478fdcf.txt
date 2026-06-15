@@ -1,0 +1,16 @@
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:24 Make PATCH request to http://localhost:8000/api/v1/courses/046f2679-00b1-4aba-94b1-75d87dd714e0
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/courses/046f2679-00b1-4aba-94b1-75d87dd714e0
+INFO     HTTP_LOGGER:event_hooks.py:24 Make DELETE request to http://localhost:8000/api/v1/courses/046f2679-00b1-4aba-94b1-75d87dd714e0
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/courses/046f2679-00b1-4aba-94b1-75d87dd714e0
+INFO     HTTP_LOGGER:event_hooks.py:24 Make GET request to http://localhost:8000/api/v1/courses/046f2679-00b1-4aba-94b1-75d87dd714e0
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 404 Not Found from http://localhost:8000/api/v1/courses/046f2679-00b1-4aba-94b1-75d87dd714e0

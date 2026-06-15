@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE1VDEzOjMzOjM3LjE2MTM0NSIsInVzZXJfaWQiOiJkYjMyMTRjYS0yMzI3LTQzMGYtYWE5My00ZWEyMzE0NmJhMzcifQ.Dm8pOz4lKuQQXTLZFCBh7AjlMvxXISMdg8ZIup3EQpw' \
+  -H 'content-length: 404' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Under consider stop news moment meet thing. Also type against its as room. Teacher budget right approach big.\nEye situation open nor cover challenge. Lead card much wife night.","maxScore":68,"minScore":27,"description":"Turn from end garden degree can.","estimatedTime":"1 weeks","previewFileId":"28392c87-2b21-4fe2-b243-68e95423619a","createdByUserId":"db3214ca-2327-430f-aa93-4ea23146ba37"}'

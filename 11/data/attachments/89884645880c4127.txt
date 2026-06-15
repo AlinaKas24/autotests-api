@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE1VDEzOjMzOjQyLjA1MDAyNyIsInVzZXJfaWQiOiIyYWY0NjE4Yy1lYWYxLTRmMzktYjg2My0yNjYzODJhMzE2OWUifQ.3r1ohKVBrXSh0Wmg5ljAp73DWX6_cIzvkCxBpKOxMFg' \
+  -H 'content-length: 424' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Show indicate state too late. Even edge office plant audience remain memory. American need cut our.\nPerhaps fire allow box. Experience boy according resource remember. Situation during even school.","maxScore":81,"minScore":24,"description":"Beautiful between above accept.","estimatedTime":"4 weeks","previewFileId":"206dba0d-057c-4fc9-b3cc-075f5e3abd6a","createdByUserId":"2af4618c-eaf1-4f39-b863-266382a3169e"}'
