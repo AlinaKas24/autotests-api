@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE1VDEzOjE2OjAyLjc1MjU2MCIsInVzZXJfaWQiOiJlMjkwYzZiYS1lODk1LTQ1MjMtYjY5Yy01MGRjZjI3MmQ0NjYifQ.DijVtekAMeS7TS_m8JpXJJ1sd5b0XgcbmGAdNROFLDM' \
+  -H 'content-length: 362' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Method open language chair situation since organization. Short again sometimes society. Late common head daughter fall board event.","maxScore":73,"minScore":39,"description":"Central term those then issue cover.","estimatedTime":"9 weeks","previewFileId":"896706ab-2c22-4135-882f-b2831fe4fad9","createdByUserId":"e290c6ba-e895-4523-b69c-50dcf272d466"}'

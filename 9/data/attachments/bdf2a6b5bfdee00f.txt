@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE1VDEzOjE2OjA2LjY4ODE2MiIsInVzZXJfaWQiOiI1MjkxZDVhZi01OTc3LTQzM2UtYTNlOC01ODNlZTc5NmZmM2QifQ.Oi5LmWU36qvMWpzKj8c9zAYmGTgC2BebuTU9jfoKXH8' \
+  -H 'content-length: 421' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Read way write plant. Other charge fly education.\nThose concern prepare task property. Quality husband include war create table mouth increase. Nature risk letter up.","maxScore":67,"minScore":11,"description":"Fear fine full hospital professor cause employee suddenly.","estimatedTime":"10 weeks","previewFileId":"99653146-d4a2-4791-bc5b-2174c18754e0","createdByUserId":"5291d5af-5977-433e-a3e8-583ee796ff3d"}'

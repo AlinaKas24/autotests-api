@@ -1,0 +1,31 @@
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:24 Make GET request to http://localhost:8000/api/v1/exercises?courseId=703e6c03-1cbc-4dd2-ba40-7400d611c361
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/exercises?courseId=703e6c03-1cbc-4dd2-ba40-7400d611c361
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercise.py:123 Check get exercises response
+INFO     BASE_ASSERTIONS:base.py:53 Check that "exercises" equals to 1
+INFO     EXERCISES_ASSERTIONS:exercise.py:53 Check exercise
+INFO     BASE_ASSERTIONS:base.py:37 Check that "id" equals to 917cf739-8731-44e0-9339-4294b764b276
+INFO     BASE_ASSERTIONS:base.py:37 Check that "title" equals to Take tell another action ten specific onto.
+INFO     BASE_ASSERTIONS:base.py:37 Check that "course_id" equals to 703e6c03-1cbc-4dd2-ba40-7400d611c361
+INFO     BASE_ASSERTIONS:base.py:37 Check that "max_score" equals to 51
+INFO     BASE_ASSERTIONS:base.py:37 Check that "min_score" equals to 24
+INFO     BASE_ASSERTIONS:base.py:37 Check that "order_index" equals to 85
+INFO     BASE_ASSERTIONS:base.py:37 Check that "description" equals to Have experience often. Act or staff or.
+Sense accept go. Difficult suffer student city. Share site white machine painting together.
+Most set quickly. A no including reveal.
+INFO     BASE_ASSERTIONS:base.py:37 Check that "estimated_time" equals to 8 weeks
+INFO     SHEMA_ASSERTIONS:schema.py:13 Validate JSON shema

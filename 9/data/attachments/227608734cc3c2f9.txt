@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE1VDEzOjE2OjA4Ljk3NTYwNCIsInVzZXJfaWQiOiI0YWFhODY3NS1hMjQyLTRjYTItYjAwMS1kNzg4Y2ExYzc5ODYifQ.sVMYEJU4wSq3Z0RXiwU4egmKANBEtEr7isDO-UX_U5w' \
+  -H 'content-length: 366' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Take tell another action ten specific onto.","courseId":"703e6c03-1cbc-4dd2-ba40-7400d611c361","maxScore":51,"minScore":24,"orderIndex":85,"description":"Have experience often. Act or staff or.\nSense accept go. Difficult suffer student city. Share site white machine painting together.\nMost set quickly. A no including reveal.","estimatedTime":"8 weeks"}'

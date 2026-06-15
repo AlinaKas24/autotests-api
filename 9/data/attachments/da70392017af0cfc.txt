@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/33d77583-223b-4598-bd71-d40c632b3013' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE1VDEzOjE2OjAxLjc4NjQyMSIsInVzZXJfaWQiOiIyNmYwOTNlNC04OTFlLTQ1NWQtYmE0OC01ZjVmYzQwNTc1ZTkifQ.7lv11wkZr8aRYoDnjJlp6rXouoOcFFLN8Z92dGQJ4pQ' \
+  -H 'content-length: 239' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Soldier player type tell material. Sing ask allow audience agree member practice. Know drug region set television natural.","maxScore":57,"minScore":43,"description":"Science figure hundred full mouth.","estimatedTime":"8 weeks"}'

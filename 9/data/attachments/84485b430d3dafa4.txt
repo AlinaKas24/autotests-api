@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE1VDEzOjE2OjA5LjMzNjUxNyIsInVzZXJfaWQiOiI0YWFhODY3NS1hMjQyLTRjYTItYjAwMS1kNzg4Y2ExYzc5ODYifQ.CNILMGsAO51wNeewBxQK89PR4QM7hkU5Qh6leFbWnaY' \
+  -H 'content-length: 408' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Budget million company. Woman network wonder. Care machine human key investment close full.\nEnergy attention relate hard building. Available after accept understand affect avoid.","maxScore":98,"minScore":25,"description":"Possible feel simple sister ready.","estimatedTime":"6 weeks","previewFileId":"69fa24e9-1953-4ed8-bf94-37ffe9371023","createdByUserId":"4aaa8675-a242-4ca2-b001-d788ca1c7986"}'

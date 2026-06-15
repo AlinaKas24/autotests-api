@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE1VDEzOjE2OjAxLjc4NjQyMSIsInVzZXJfaWQiOiIyNmYwOTNlNC04OTFlLTQ1NWQtYmE0OC01ZjVmYzQwNTc1ZTkifQ.7lv11wkZr8aRYoDnjJlp6rXouoOcFFLN8Z92dGQJ4pQ' \
+  -H 'content-length: 313' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Media admit business can available. Similar western today memory news. Discover morning alone edge.","maxScore":63,"minScore":41,"description":"Know stop new bill.","estimatedTime":"4 weeks","previewFileId":"9b9cc3fe-cdbc-49f1-98e5-86cd6ce44670","createdByUserId":"26f093e4-891e-455d-ba48-5f5fc40575e9"}'
