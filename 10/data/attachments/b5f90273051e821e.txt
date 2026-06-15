@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE1VDEzOjIxOjM5LjM5MDcwMyIsInVzZXJfaWQiOiJlZjgxYTI0Zi05OWU5LTQ3YzAtOTBmZC1iMTg3MjczZWE4ZmMifQ.r-HXqOulFdZz2ejHPxUGVViEp3J2ZimQWHimgo5bJrQ' \
+  -H 'content-length: 322' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Young thing society various sure report ask. Point simple check wall since both young.","maxScore":69,"minScore":27,"description":"Career they particular popular something.","estimatedTime":"1 weeks","previewFileId":"c7000a2d-a8f8-4cc3-aef6-f9d1f3661a7b","createdByUserId":"ef81a24f-99e9-47c0-90fd-b187273ea8fc"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE1VDEzOjIxOjM1LjAwOTUxOSIsInVzZXJfaWQiOiIyYjQ5OTJjNy0wMzliLTRkOGMtOTVjZi04ZTEzY2I4M2Y3MGIifQ.0J0xG5Najm_5uluGN9rCdlzJeB44uXPc958C7CmRM14' \
+  -H 'content-length: 313' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Idea wind matter fine back admit. Away knowledge remember under attention visit front.","maxScore":59,"minScore":14,"description":"Pretty also social morning four.","estimatedTime":"6 weeks","previewFileId":"9ee6f153-37da-45e1-9139-1dd2d98caacf","createdByUserId":"2b4992c7-039b-4d8c-95cf-8e13cb83f70b"}'

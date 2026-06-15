@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE1VDEzOjIxOjM5LjA3NjU5NiIsInVzZXJfaWQiOiJlZjgxYTI0Zi05OWU5LTQ3YzAtOTBmZC1iMTg3MjczZWE4ZmMifQ.RQR--JNn1iQ_4viCBsKny2VKPhNdjW1zmKxW3xdFlHU' \
+  -H 'content-length: 259' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Relationship grow right fill this simply.","courseId":"ea98bb5f-cbd6-45d1-91f3-f9b414ccb231","maxScore":100,"minScore":42,"orderIndex":2,"description":"Begin also would.\nAlthough newspaper throw. Your impact white spend.","estimatedTime":"2 weeks"}'

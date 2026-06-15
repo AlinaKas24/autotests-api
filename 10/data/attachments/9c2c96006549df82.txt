@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE1VDEzOjIxOjQwLjMwMzI2MyIsInVzZXJfaWQiOiJiMGU4MzhlYi1lODZmLTRmODEtYWQ4Ny1kZDRkZDQ0YmRmODMifQ.alm08GLmQv7EkDT8ee8WUGlq9wKFzfZ6-atobc6SVns' \
+  -H 'content-length: 362' \
+  -H 'content-type: application/json' \
+  -d '{"title":"They both fine none year while.","courseId":"293c5a02-021a-44aa-bbb9-cd7d1f233601","maxScore":69,"minScore":15,"orderIndex":58,"description":"Throw reflect short current half five. Newspaper environment Democrat option industry.\nAffect allow and heart. Happy cost character forget big detail toward. Even from plant forget.","estimatedTime":"5 weeks"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE1VDEzOjIxOjM4LjI0ODM3NCIsInVzZXJfaWQiOiI0OTYwMWIwMy0wNGM5LTRhNWMtODRjMy1kYjQ0YzZmNjU1YjMifQ.w38XhUi3r5eBEbJyg3aPMcKnKp48TvMG8-A_WWmI-Is' \
+  -H 'content-length: 392' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Receive by beat then also may fly.\nNear keep head brother avoid college paper. Thus follow learn perform security. Forget apply should region thing number.","maxScore":51,"minScore":11,"description":"Member artist bit nor follow they finish.","estimatedTime":"8 weeks","previewFileId":"421399fb-54c7-4223-9c9f-b0e7f543cb42","createdByUserId":"49601b03-04c9-4a5c-84c3-db44c6f655b3"}'

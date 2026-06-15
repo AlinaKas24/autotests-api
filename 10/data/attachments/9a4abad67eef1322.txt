@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE1VDEzOjIxOjQxLjc4NTg5MSIsInVzZXJfaWQiOiJmZTA3YzYzNC00ZjYwLTQyMWQtOGIzYi1mYjJlZmMxZGJjOTMifQ.invYir8_SGBnss6GXhZJGQ4KQudzOPsEX5_uUxkPdXg' \
+  -H 'content-length: 338' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Family public east.\nIndividual do visit heavy care television focus enough. Detail animal everyone.","maxScore":72,"minScore":9,"description":"Tell green cell most case student much you.","estimatedTime":"10 weeks","previewFileId":"0b9c5b5a-9046-4923-99d3-b9fdabf2bca0","createdByUserId":"fe07c634-4f60-421d-8b3b-fb2efc1dbc93"}'

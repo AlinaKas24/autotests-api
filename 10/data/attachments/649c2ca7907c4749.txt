@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE1VDEzOjIxOjMzLjg3OTcyOCIsInVzZXJfaWQiOiIzZTdhOWZlYS02YTc1LTRmZDItYjRlNC1mNjk0MGM2MDhkZTYifQ.4_cb0FIex_XhdIwSHpaonLVggtvid5fBXGmhQ_vLKpc' \
+  -H 'content-length: 379' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Thank animal statement successful fund realize.\nGuess gun family job important administration tonight. Long measure prepare head hope. Key letter sometimes.","maxScore":70,"minScore":39,"description":"Father old draw technology.","estimatedTime":"7 weeks","previewFileId":"20ce3a0c-45ea-49f7-82a7-b7927099b2d1","createdByUserId":"3e7a9fea-6a75-4fd2-b4e4-f6940c608de6"}'

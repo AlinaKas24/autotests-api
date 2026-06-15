@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE1VDEzOjIxOjM1Ljg3NDMxMCIsInVzZXJfaWQiOiJiZWJkMzZjMC00NDlhLTQzNWItYjA1OC03MmZlNWM3MDc4YzYifQ.0GQEUv3cNqPm1rCqbv91XHmXTV7asbBfk8NXu_EDEt8' \
+  -H 'content-length: 312' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Play star look turn expert since. Data still in why paper.\nMedia music PM yourself per party.","maxScore":68,"minScore":44,"description":"Time three member lose.","estimatedTime":"8 weeks","previewFileId":"5c5bce8e-1cd2-4208-9f04-7930ace76ac3","createdByUserId":"bebd36c0-449a-435b-b058-72fe5c7078c6"}'

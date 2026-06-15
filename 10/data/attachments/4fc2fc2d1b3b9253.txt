@@ -1,0 +1,15 @@
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make GET request to http://localhost:8000/api/v1/files/file_id
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 422 Unprocessable Entity from http://localhost:8000/api/v1/files/file_id
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals to 422
+INFO     FILES_ASSERTIONS:files.py:72 Check response when file id is incorrect
+INFO     BASE_ASSERTIONS:base.py:53 Check that "detail" equals to 1
+INFO     BASE_ASSERTIONS:base.py:37 Check that "type" equals to uuid_parsing
+INFO     BASE_ASSERTIONS:base.py:37 Check that "loc" equals to uuid_parsing
+INFO     BASE_ASSERTIONS:base.py:37 Check that "msg" equals to uuid_parsing
+INFO     BASE_ASSERTIONS:base.py:37 Check that "input" equals to uuid_parsing
+INFO     BASE_ASSERTIONS:base.py:37 Check that "ctx" equals to uuid_parsing
+INFO     SHEMA_ASSERTIONS:schema.py:13 Validate JSON shema

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE1VDEzOjIxOjQwLjYyNzE2NiIsInVzZXJfaWQiOiJiMGU4MzhlYi1lODZmLTRmODEtYWQ4Ny1kZDRkZDQ0YmRmODMifQ.smj5o2Bxv8nJKjNIR4su4C1LJKupnLkEN9s16INsYFg' \
+  -H 'content-length: 385' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Back check quite coach little expect.\nReally fill task. Daughter together level growth.\nResource none ten modern store amount. Identify interesting before.","maxScore":76,"minScore":22,"description":"Never civil cut town edge result.","estimatedTime":"3 weeks","previewFileId":"bfab87ba-ec76-4d3b-83c3-fb3ee9fb3c3c","createdByUserId":"b0e838eb-e86f-4f81-ad87-dd4dd44bdf83"}'

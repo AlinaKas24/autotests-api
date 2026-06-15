@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE1VDEzOjIxOjM2Ljc3NzQ1OSIsInVzZXJfaWQiOiI5MTM4NzlkYi0yN2M1LTQ3ZDItOTM3Yi1iMjE1NTI3MDA4ZDQifQ.gzc7XkRxJ1FnY26ZcUyh2Fjr6MfC_JOQ0m2fPbvHuGE' \
+  -H 'content-length: 263' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Into woman daughter.","courseId":"48564133-3522-47ba-9fb6-a7163df78917","maxScore":87,"minScore":9,"orderIndex":86,"description":"Long bad lot give let price. Section knowledge five employee. Take risk together form daughter.","estimatedTime":"9 weeks"}'

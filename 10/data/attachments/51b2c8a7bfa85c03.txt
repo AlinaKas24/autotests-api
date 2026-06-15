@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE1VDEzOjIxOjM3LjEwNTczOSIsInVzZXJfaWQiOiI5MTM4NzlkYi0yN2M1LTQ3ZDItOTM3Yi1iMjE1NTI3MDA4ZDQifQ.ZfpyLnmp1iZ8O-7zUK6om3MrSh3zoHnV-lST32z4VLk' \
+  -H 'content-length: 411' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Behind there mouth sit right sport staff. Increase church prevent level. Toward appear produce voice.\nOk term lawyer oil. Player make party.\nHappy alone and. Everyone together tend tell.","maxScore":63,"minScore":26,"description":"Eat without short professor.","estimatedTime":"5 weeks","previewFileId":"c8f3da33-3301-47f4-83e3-a646dc309255","createdByUserId":"913879db-27c5-47d2-937b-b215527008d4"}'
