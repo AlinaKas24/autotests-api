@@ -28,6 +28,7 @@ class Resp:
     message: str | None = None
 
 
+
 class API:
     def make_purchase(self, user_id: int, amount: int) -> Resp:
         if amount > 50_000:
