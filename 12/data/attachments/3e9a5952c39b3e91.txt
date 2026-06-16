@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDA3OjI0OjEzLjAxMjQyMiIsInVzZXJfaWQiOiI3MGY5YTgxNS03ODYzLTRlOWEtYTExNS1lNDdmMWJhY2E3ZjAifQ.iKstE-PRi-sUm6YaGm_1sNhMhsE-mHuri9OYX5Nuz7U' \
+  -H 'content-length: 398' \
+  -H 'content-type: application/json' \
+  -d '{"title":"These race more surface no people. Let attention theory fish. Someone throughout world machine.\nAfter expert treat building. Important rest hand so dark.","maxScore":61,"minScore":5,"description":"Need himself Republican myself again really whole.","estimatedTime":"5 weeks","previewFileId":"2b1ff5b2-4f42-40cd-863c-66a36844593e","createdByUserId":"70f9a815-7863-4e9a-a115-e47f1baca7f0"}'

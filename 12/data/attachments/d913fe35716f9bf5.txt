@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/64e4a8dc-ba27-420d-9d35-139b772e2bed' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDA3OjI0OjA1LjQ4MjkzNSIsInVzZXJfaWQiOiJlYzU0MzY2Zi03OTA0LTQxMjctOGIyNi1kMmU0MzE3NTJmMWMifQ.JS1viS8Vw9aOSUERJ0p4QY5vwEfDqo4uUtG2O16cTW8' \
+  -H 'content-length: 285' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Together public society meet expect. Indeed tend Democrat.\nPerform end point feeling. Short no anyone and time public computer them. Bring toward black street.","maxScore":63,"minScore":47,"description":"Call stand focus idea culture first focus.","estimatedTime":"9 weeks"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDA3OjI0OjA3LjgxOTE5MCIsInVzZXJfaWQiOiJiOWEwYjEzOS02MTM0LTRkODQtYjY5MS1kOGQ2N2Y3YjE3NzMifQ.j2Nu9qeoEerxsfSeTMpvmA71w3mX6QwIM9RbOYMemlU' \
+  -H 'content-length: 355' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Only pretty surface center position international. Manager authority than draw. Finish spring clear your who president.","maxScore":72,"minScore":3,"description":"Ask audience over send decade medical yet.","estimatedTime":"4 weeks","previewFileId":"769e113c-0de9-4fd4-829f-a00decc24ba6","createdByUserId":"b9a0b139-6134-4d84-b691-d8d67f7b1773"}'

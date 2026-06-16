@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/6077d761-8d29-458c-8915-40e0a0f69326' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDA3OjI0OjA2LjQ2Mzc0MiIsInVzZXJfaWQiOiJhZDVjYTQwNy1hODBjLTQwYTgtYjgyNi1iZDk3MDM4YzhmMjMifQ.92sgytw2KVx9NwdgPw9w6_YQiHiS5cPqPrBAb0hC4Jc' \
+  -H 'content-length: 289' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Increase north foot live three. Instead their little her up hair.\nYourself customer against performance key final nearly may. Personal general ability their yard head herself.","maxScore":66,"minScore":23,"description":"Body life anyone impact range.","estimatedTime":"5 weeks"}'

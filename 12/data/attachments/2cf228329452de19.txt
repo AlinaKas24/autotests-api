@@ -1,0 +1,29 @@
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:24 Make GET request to http://localhost:8000/api/v1/exercises/3af76558-7c54-498b-8d75-4b31c22d1088
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/exercises/3af76558-7c54-498b-8d75-4b31c22d1088
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercise.py:76 Check get exercise response
+INFO     EXERCISES_ASSERTIONS:exercise.py:53 Check exercise
+INFO     BASE_ASSERTIONS:base.py:37 Check that "id" equals to 3af76558-7c54-498b-8d75-4b31c22d1088
+INFO     BASE_ASSERTIONS:base.py:37 Check that "title" equals to Fact make decision care.
+INFO     BASE_ASSERTIONS:base.py:37 Check that "course_id" equals to c1f455f2-8dcd-4902-865b-44b30a5b4b78
+INFO     BASE_ASSERTIONS:base.py:37 Check that "max_score" equals to 65
+INFO     BASE_ASSERTIONS:base.py:37 Check that "min_score" equals to 30
+INFO     BASE_ASSERTIONS:base.py:37 Check that "order_index" equals to 37
+INFO     BASE_ASSERTIONS:base.py:37 Check that "description" equals to Letter white type single majority would business. Per others should.
+Hundred direction research meeting catch accept. Range garden treat loss end.
+INFO     BASE_ASSERTIONS:base.py:37 Check that "estimated_time" equals to 4 weeks
+INFO     SHEMA_ASSERTIONS:schema.py:13 Validate JSON shema

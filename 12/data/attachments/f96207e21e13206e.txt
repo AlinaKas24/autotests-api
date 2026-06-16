@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDA3OjI0OjA2LjQ2Mzc0MiIsInVzZXJfaWQiOiJhZDVjYTQwNy1hODBjLTQwYTgtYjgyNi1iZDk3MDM4YzhmMjMifQ.92sgytw2KVx9NwdgPw9w6_YQiHiS5cPqPrBAb0hC4Jc' \
+  -H 'content-length: 414' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Cut she mother carry. Eat technology father city front. Fly represent camera.\nIncluding remember yet hard continue. Research Democrat may hair hand cut. Doctor worry either happy work.","maxScore":74,"minScore":40,"description":"Sense room future activity story.","estimatedTime":"10 weeks","previewFileId":"a92b453a-1c96-4fe7-825e-5eac433391f7","createdByUserId":"ad5ca407-a80c-40a8-b826-bd97038c8f23"}'

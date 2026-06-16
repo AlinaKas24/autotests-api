@@ -1,0 +1,25 @@
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     SWAGGER_COVERAGE_TRACKER_STORAGE:storage.py:34 Results directory does not exist, creating: /home/runner/work/autotests-api/autotests-api/coverage-results
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:24 Make GET request to http://localhost:8000/api/v1/courses?userId=323e4103-d21b-4c74-84bb-80799dfae22c
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/courses?userId=323e4103-d21b-4c74-84bb-80799dfae22c
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:63 Check get courses response
+INFO     BASE_ASSERTIONS:base.py:53 Check that "courses" equals to 1
+INFO     COURSES_ASSERTIONS:courses.py:42 Check course
+INFO     BASE_ASSERTIONS:base.py:37 Check that "id" equals to fc3b0fe1-ff89-41c5-b215-83fe4240fdaf
+INFO     BASE_ASSERTIONS:base.py:37 Check that "title" equals to Natural thing once professional benefit them argue amount. Approach imagine enjoy not.
+Point tonight dinner agency young.
+Civil writer travel teach fire this. Industry pull probably nice evening.
+INFO     BASE_ASSERTIONS:base.py:37 Check that "max_score" equals to 69
+INFO     BASE_ASSERTIONS:base.py:37 Check that "min_score" equals to 13
+INFO     BASE_ASSERTIONS:base.py:37 Check that "description" equals to Career cell make.
+INFO     BASE_ASSERTIONS:base.py:37 Check that "estimated_time" equals to 3 weeks

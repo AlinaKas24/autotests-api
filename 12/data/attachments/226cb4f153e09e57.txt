@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDA3OjI0OjA1LjQ4MjkzNSIsInVzZXJfaWQiOiJlYzU0MzY2Zi03OTA0LTQxMjctOGIyNi1kMmU0MzE3NTJmMWMifQ.JS1viS8Vw9aOSUERJ0p4QY5vwEfDqo4uUtG2O16cTW8' \
+  -H 'content-length: 410' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Maybe opportunity service manage area could save. Build month let father agency peace. Nice wife office again budget open.\nCare manage office. Difficult including family fast reflect language window.","maxScore":71,"minScore":21,"description":"Drive play red.","estimatedTime":"6 weeks","previewFileId":"6786cad5-ea0c-4029-9863-34ed3bf76c25","createdByUserId":"ec54366f-7904-4127-8b26-d2e431752f1c"}'

@@ -1,0 +1,25 @@
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:24 Make PATCH request to http://localhost:8000/api/v1/exercises/d00afe32-76a8-4fb9-9479-fb4e31c06d5a
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/exercises/d00afe32-76a8-4fb9-9479-fb4e31c06d5a
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercise.py:91 Check update exercise response
+INFO     BASE_ASSERTIONS:base.py:37 Check that "title" equals to Bar population edge spring language.
+INFO     BASE_ASSERTIONS:base.py:37 Check that "min_score" equals to 40
+INFO     BASE_ASSERTIONS:base.py:37 Check that "max_score" equals to 91
+INFO     BASE_ASSERTIONS:base.py:37 Check that "order_index" equals to 67
+INFO     BASE_ASSERTIONS:base.py:37 Check that "description" equals to Yard agreement they health wear. Today of opportunity. Identify investment machine center.
+INFO     BASE_ASSERTIONS:base.py:37 Check that "estimated_time" equals to 10 weeks
+INFO     SHEMA_ASSERTIONS:schema.py:13 Validate JSON shema

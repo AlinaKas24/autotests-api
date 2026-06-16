@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDA3OjI0OjA5LjEwMDc4MiIsInVzZXJfaWQiOiJkODhmYzIxYy05MzMwLTQxMTUtYmUwYy00ZmQyOWQ1MDQ5NzMifQ.gix6YzaZgHZ6b0mmTa_D0zvXmS3e4xSHg7mejcwvPNk' \
+  -H 'content-length: 328' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Unit night for floor girl agreement. Development yourself whether. Project ok beat town sport possible.","maxScore":83,"minScore":1,"description":"We once opportunity blue type.","estimatedTime":"10 weeks","previewFileId":"3a6a16f3-b146-4be1-8e3c-74c2fef3d357","createdByUserId":"d88fc21c-9330-4115-be0c-4fd29d504973"}'

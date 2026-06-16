@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/d00afe32-76a8-4fb9-9479-fb4e31c06d5a' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDA3OjI0OjA4Ljc0NTQzNiIsInVzZXJfaWQiOiJkODhmYzIxYy05MzMwLTQxMTUtYmUwYy00ZmQyOWQ1MDQ5NzMifQ.ulymjX9AgaT9d37XfuKdE6RfZzXm-VljoyW_brahl48' \
+  -H 'content-length: 226' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Bar population edge spring language.","maxScore":91,"minScore":40,"orderIndex":67,"description":"Yard agreement they health wear. Today of opportunity. Identify investment machine center.","estimatedTime":"10 weeks"}'

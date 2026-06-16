@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDA3OjI0OjExLjczNTc5NiIsInVzZXJfaWQiOiJhZDk5OWE3NC0xZmJjLTQ5N2ItYjM1NS1kMTRmNzZhMDE2MTAifQ.ewsllEbf6vO6vkXFrZ-dpmxceUEqrxySKTX9xaiXtcg' \
+  -H 'content-length: 345' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Want traditional production Republican half.\nAssume school long success. Man interesting around reality sign protect trip.","maxScore":96,"minScore":24,"description":"Image skill after who wish.","estimatedTime":"9 weeks","previewFileId":"6bb9757e-2e59-4c09-bd50-ab0666a45d06","createdByUserId":"ad999a74-1fbc-497b-b355-d14f76a01610"}'

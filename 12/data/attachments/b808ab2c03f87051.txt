@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDA3OjI0OjA0LjIxNjE2NiIsInVzZXJfaWQiOiIzMjNlNDEwMy1kMjFiLTRjNzQtODRiYi04MDc5OWRmYWUyMmMifQ.O9Tq5MyyPNeJyRuzdxwOeLIjbrNOFIbbNy8-koPSnJI' \
+  -H 'content-length: 409' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Natural thing once professional benefit them argue amount. Approach imagine enjoy not.\nPoint tonight dinner agency young.\nCivil writer travel teach fire this. Industry pull probably nice evening.","maxScore":69,"minScore":13,"description":"Career cell make.","estimatedTime":"3 weeks","previewFileId":"f8950335-b77a-40d7-85f8-e7b74a3408d5","createdByUserId":"323e4103-d21b-4c74-84bb-80799dfae22c"}'
