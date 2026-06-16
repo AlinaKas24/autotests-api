@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/2270f1c4-9d88-47aa-9479-fd7378292cbe' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDA3OjI2OjAzLjk2ODE5OSIsInVzZXJfaWQiOiIwNTZiYjFhYy1lNDk5LTRmNzctOTZkMy02YmE5OGM1Zjc3MjAifQ.5AtCdQymJvAE5GLyToC2IiAqtdJEFxF23RDVyvADplE' \
+  -H 'content-length: 300' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Decision conference other such consider toward.","maxScore":76,"minScore":49,"orderIndex":31,"description":"Friend financial federal many. Produce this politics question throughout writer.\nThought stay point live nor make. Manager ahead affect about human low.","estimatedTime":"10 weeks"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDA3OjI2OjAxLjY4MDE0NiIsInVzZXJfaWQiOiJiZThhYzgyNS04NzMxLTQ3ODctYThlYS0xOWRlNzQ2ZmVmZmEifQ.TUBPliZBDGK0irlNZwxaPmdCZWH3bc2Lj9pXXCyeWg8' \
+  -H 'content-length: 356' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Lot land whose human authority. Work ball exist set way cell necessary she.\nPay movement discussion technology sure glass hot.","maxScore":89,"minScore":32,"description":"Politics main the hand will happy.","estimatedTime":"1 weeks","previewFileId":"3c50a615-32ca-4106-88a2-8e1aea34760b","createdByUserId":"be8ac825-8731-4787-a8ea-19de746feffa"}'

@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/2bc3ebc7-b2e4-41ab-a65c-6781c2fd8579' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDA3OjI2OjAxLjY4MDE0NiIsInVzZXJfaWQiOiJiZThhYzgyNS04NzMxLTQ3ODctYThlYS0xOWRlNzQ2ZmVmZmEifQ.TUBPliZBDGK0irlNZwxaPmdCZWH3bc2Lj9pXXCyeWg8' \
+  -H 'content-length: 210' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Day tend billion still. Will fish begin with answer. Soon between accept agent someone.","maxScore":94,"minScore":16,"description":"Pm effort top present according itself.","estimatedTime":"10 weeks"}'

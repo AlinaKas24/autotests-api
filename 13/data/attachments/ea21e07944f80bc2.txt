@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDA3OjI2OjAyLjY4NzUxOSIsInVzZXJfaWQiOiJmYjAwNjAwNS01YjA1LTRkMjEtYTljYS1kZDZhMDM5OGY2NzQifQ.psMSsKeooy9wvH0jkepnEaS_4QGMe1XPkXRWnCPLBfI' \
+  -H 'content-length: 325' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Sing unit pick stuff.","courseId":"0a883b16-895c-40d8-89a9-3586154914e8","maxScore":91,"minScore":26,"orderIndex":49,"description":"Throw though human again onto.\nVote and change public. Walk religious animal size material share.\nBaby research gun draw. Where none throw send politics.","estimatedTime":"5 weeks"}'

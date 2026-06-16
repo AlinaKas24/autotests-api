@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDA3OjI2OjA1LjU5NjI3MyIsInVzZXJfaWQiOiIzODkxNjJkOS1iMzc4LTRmZGItYTMxMS0wMzdmNDljNTAwNTcifQ.DOPXBiCYt5F6lOa7y0K5PrJCdsMYO1Q-89k7s5hrZYw' \
+  -H 'content-length: 414' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Brother general maybe step garden. Clearly today inside third.\nReady night old rather. Must story believe trial also individual indeed. Happen bit series forget carry much skin.","maxScore":77,"minScore":16,"description":"Customer stuff senior worker maybe happy.","estimatedTime":"4 weeks","previewFileId":"d741534a-cfd4-4ed1-835e-0a6f7e9eb61d","createdByUserId":"389162d9-b378-4fdb-a311-037f49c50057"}'

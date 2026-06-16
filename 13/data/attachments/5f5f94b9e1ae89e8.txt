@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDA3OjI2OjA4LjIwOTY1NCIsInVzZXJfaWQiOiJiZDU3MmI2Yy0zOTYwLTRkYzQtOWVkMC0xNWFmMGIwNDc4MGQifQ.k8ts9M_zu_jWOuzdHO3shPZ-c-dnLk094s_fAjujx-g' \
+  -H 'content-length: 324' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Keep within me must out today. This finish imagine similar side campaign large military.","maxScore":93,"minScore":36,"description":"Probably speak professional certain pick.","estimatedTime":"7 weeks","previewFileId":"b223fa19-9e69-4775-92c9-8a1ab6ec2bee","createdByUserId":"bd572b6c-3960-4dc4-9ed0-15af0b04780d"}'

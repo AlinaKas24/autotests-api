@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDA3OjI2OjAwLjY5NTQ0NyIsInVzZXJfaWQiOiIzMzJjYzlhMC1hMzhlLTRjNmQtOGNjNS1kNjMwNGRkMTllM2MifQ.PyjrT4Sn7rEiv4tpkWFGbzMKOBiviZl1SiXp9G2vkPg' \
+  -H 'content-length: 415' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Suddenly partner movie next family. Teach upon view. All suggest beyond little occur serve.\nSuffer all owner discover. Step some interesting star election.\nDrive near laugh risk fine life area.","maxScore":60,"minScore":41,"description":"Staff support very kind.","estimatedTime":"10 weeks","previewFileId":"4726109f-e270-4e43-8351-4d19b17a8c79","createdByUserId":"332cc9a0-a38e-4c6d-8cc5-d6304dd19e3c"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDA3OjI2OjA0LjMxNzQ1MyIsInVzZXJfaWQiOiIwNTZiYjFhYy1lNDk5LTRmNzctOTZkMy02YmE5OGM1Zjc3MjAifQ.06OT1mkpknEWrxcy-Y8GP9Z4iIqVjqOkUHO-NTqjaOE' \
+  -H 'content-length: 297' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Drug small party both yeah some begin. Possible true alone what.","maxScore":90,"minScore":11,"description":"Identify budget name quite article us.","estimatedTime":"7 weeks","previewFileId":"00c621fc-9d6c-4704-84b3-493b3fce793b","createdByUserId":"056bb1ac-e499-4f77-96d3-6ba98c5f7720"}'

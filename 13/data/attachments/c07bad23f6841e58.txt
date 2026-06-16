@@ -1,0 +1,26 @@
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:28 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals to 200
+INFO     SHEMA_ASSERTIONS:schema.py:13 Validate JSON shema
+INFO     EXERCISES_ASSERTIONS:exercise.py:32 Check create exercise response
+INFO     BASE_ASSERTIONS:base.py:37 Check that "title" equals to Sing unit pick stuff.
+INFO     BASE_ASSERTIONS:base.py:37 Check that "course_id" equals to 0a883b16-895c-40d8-89a9-3586154914e8
+INFO     BASE_ASSERTIONS:base.py:37 Check that "min_score" equals to 26
+INFO     BASE_ASSERTIONS:base.py:37 Check that "max_score" equals to 91
+INFO     BASE_ASSERTIONS:base.py:37 Check that "order_index" equals to 49
+INFO     BASE_ASSERTIONS:base.py:37 Check that "description" equals to Throw though human again onto.
+Vote and change public. Walk religious animal size material share.
+Baby research gun draw. Where none throw send politics.
+INFO     BASE_ASSERTIONS:base.py:37 Check that "estimated_time" equals to 5 weeks

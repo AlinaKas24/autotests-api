@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDA3OjI2OjA3LjI2MjY4MiIsInVzZXJfaWQiOiI2MTI4Mzg0Mi02MWU1LTQ3OTUtOTM4Ny00YzUwNjM1MWUxYzQifQ.YiL85jNyhXRUeLr8Fs4Ggbe8x7J3q3vNvPWHWTlWrbg' \
+  -H 'content-length: 424' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Identify simple care lot test. Development some into major trip seem thousand.\nPick test once drop magazine structure. Research both natural throw report. Either choose small state current this risk.","maxScore":72,"minScore":13,"description":"Sense both own foot industry.","estimatedTime":"5 weeks","previewFileId":"5d6099b0-6410-4e7b-96e5-da2fd18b598d","createdByUserId":"61283842-61e5-4795-9387-4c506351e1c4"}'

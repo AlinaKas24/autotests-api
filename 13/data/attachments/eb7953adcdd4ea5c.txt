@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDA3OjI2OjAzLjAzOTA1MyIsInVzZXJfaWQiOiJmYjAwNjAwNS01YjA1LTRkMjEtYTljYS1kZDZhMDM5OGY2NzQifQ.DjY4ccWznCYLRTPsYtsIKBsQO5VYJGtwj0mnZjmqlI8' \
+  -H 'content-length: 298' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Town thank baby her almost oil. Computer message about picture.","maxScore":92,"minScore":49,"description":"One design early manage Mr teacher huge.","estimatedTime":"7 weeks","previewFileId":"4f0b3bc9-421d-417a-910f-7e848661b2e8","createdByUserId":"fb006005-5b05-4d21-a9ca-dd6a0398f674"}'

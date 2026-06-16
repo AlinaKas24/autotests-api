@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDA3OjI1OjU5LjQyODIyOCIsInVzZXJfaWQiOiIwNDI2YTA4ZS1jYjMxLTRlYjUtYTY0Ny04NTY2MzZiZDhlZTMifQ.pe_W5mwnFcwEAGnp1TjK7hSEH5pHNfGxw5UJjqszOPw' \
+  -H 'content-length: 403' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Poor choose early enter decision themselves decide. Loss build boy meeting money.\nSummer movie agent cause thus. Third image image learn probably protect.","maxScore":67,"minScore":20,"description":"Paper collection item continue manager training deep.","estimatedTime":"6 weeks","previewFileId":"26663dd6-ae92-4203-8618-41d44261a366","createdByUserId":"0426a08e-cb31-4eb5-a647-856636bd8ee3"}'
